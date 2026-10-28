@@ -1,0 +1,983 @@
+{
+  "package": {
+    "name": "@stellark/social-publisher",
+    "version": "0.1.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+      "check": "tsc --noEmit",
+      "test": "vitest run && npm run test:python",
+      "test:python": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s test_python -p 'test_*.py'",
+      "dev": "wrangler dev",
+      "deploy": "wrangler deploy",
+      "types": "wrangler types",
+      "db:local": "wrangler d1 migrations apply social-publisher --local",
+      "db:remote": "wrangler d1 migrations apply social-publisher --remote"
+    },
+    "devDependencies": {
+      "@cloudflare/workers-types": "^5.20260907.1",
+      "typescript": "^7.0.2",
+      "vitest": "^5.0.0",
+      "wrangler": "^4.129.1"
+    }
+  },
+  "lockfile_version": 3,
+  "package_lock_sha256": "9604dff272c683b4256619f189e580a12b0a79f7d9a8993471572e3ce8c2e57c",
+  "locked_packages": {
+    "node_modules/@cloudflare/kv-asset-handler": {
+      "version": "0.5.0",
+      "engines": {
+        "node": ">=22.0.0"
+      }
+    },
+    "node_modules/@cloudflare/unenv-preset": {
+      "version": "2.16.1",
+      "engines": {}
+    },
+    "node_modules/@cloudflare/workerd-darwin-64": {
+      "version": "1.20260907.1",
+      "engines": {
+        "node": ">=16"
+      }
+    },
+    "node_modules/@cloudflare/workerd-darwin-arm64": {
+      "version": "1.20260907.1",
+      "engines": {
+        "node": ">=16"
+      }
+    },
+    "node_modules/@cloudflare/workerd-linux-64": {
+      "version": "1.20260907.1",
+      "engines": {
+        "node": ">=16"
+      }
+    },
+    "node_modules/@cloudflare/workerd-linux-arm64": {
+      "version": "1.20260907.1",
+      "engines": {
+        "node": ">=16"
+      }
+    },
+    "node_modules/@cloudflare/workerd-windows-64": {
+      "version": "1.20260907.1",
+      "engines": {
+        "node": ">=16"
+      }
+    },
+    "node_modules/@cloudflare/workers-types": {
+      "version": "5.20260907.1",
+      "engines": {}
+    },
+    "node_modules/@cspotcode/source-map-support": {
+      "version": "0.8.1",
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/@cspotcode/source-map-support/node_modules/@jridgewell/trace-mapping": {
+      "version": "0.3.9",
+      "engines": {}
+    },
+    "node_modules/@emnapi/runtime": {
+      "version": "1.11.3",
+      "engines": {}
+    },
+    "node_modules/@esbuild/aix-ppc64": {
+      "version": "0.28.1",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/android-arm": {
+      "version": "0.28.1",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/android-arm64": {
+      "version": "0.28.1",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/android-x64": {
+      "version": "0.28.1",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/darwin-arm64": {
+      "version": "0.28.1",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/darwin-x64": {
+      "version": "0.28.1",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/freebsd-arm64": {
+      "version": "0.28.1",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/freebsd-x64": {
+      "version": "0.28.1",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/linux-arm": {
+      "version": "0.28.1",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/linux-arm64": {
+      "version": "0.28.1",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/linux-ia32": {
+      "version": "0.28.1",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/linux-loong64": {
+      "version": "0.28.1",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/linux-mips64el": {
+      "version": "0.28.1",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/linux-ppc64": {
+      "version": "0.28.1",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/linux-riscv64": {
+      "version": "0.28.1",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/linux-s390x": {
+      "version": "0.28.1",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/linux-x64": {
+      "version": "0.28.1",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/netbsd-arm64": {
+      "version": "0.28.1",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/netbsd-x64": {
+      "version": "0.28.1",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/openbsd-arm64": {
+      "version": "0.28.1",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/openbsd-x64": {
+      "version": "0.28.1",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/openharmony-arm64": {
+      "version": "0.28.1",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/sunos-x64": {
+      "version": "0.28.1",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/win32-arm64": {
+      "version": "0.28.1",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/win32-ia32": {
+      "version": "0.28.1",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/win32-x64": {
+      "version": "0.28.1",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@img/colour": {
+      "version": "1.1.0",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@img/sharp-darwin-arm64": {
+      "version": "0.35.2",
+      "engines": {
+        "node": ">=20.9.0"
+      }
+    },
+    "node_modules/@img/sharp-darwin-x64": {
+      "version": "0.35.2",
+      "engines": {
+        "node": ">=20.9.0"
+      }
+    },
+    "node_modules/@img/sharp-freebsd-wasm32": {
+      "version": "0.35.2",
+      "engines": {
+        "node": ">=20.9.0"
+      }
+    },
+    "node_modules/@img/sharp-libvips-darwin-arm64": {
+      "version": "1.3.1",
+      "engines": {}
+    },
+    "node_modules/@img/sharp-libvips-darwin-x64": {
+      "version": "1.3.1",
+      "engines": {}
+    },
+    "node_modules/@img/sharp-libvips-linux-arm": {
+      "version": "1.3.1",
+      "engines": {}
+    },
+    "node_modules/@img/sharp-libvips-linux-arm64": {
+      "version": "1.3.1",
+      "engines": {}
+    },
+    "node_modules/@img/sharp-libvips-linux-ppc64": {
+      "version": "1.3.1",
+      "engines": {}
+    },
+    "node_modules/@img/sharp-libvips-linux-riscv64": {
+      "version": "1.3.1",
+      "engines": {}
+    },
+    "node_modules/@img/sharp-libvips-linux-s390x": {
+      "version": "1.3.1",
+      "engines": {}
+    },
+    "node_modules/@img/sharp-libvips-linux-x64": {
+      "version": "1.3.1",
+      "engines": {}
+    },
+    "node_modules/@img/sharp-libvips-linuxmusl-arm64": {
+      "version": "1.3.1",
+      "engines": {}
+    },
+    "node_modules/@img/sharp-libvips-linuxmusl-x64": {
+      "version": "1.3.1",
+      "engines": {}
+    },
+    "node_modules/@img/sharp-linux-arm": {
+      "version": "0.35.2",
+      "engines": {
+        "node": ">=20.9.0"
+      }
+    },
+    "node_modules/@img/sharp-linux-arm64": {
+      "version": "0.35.2",
+      "engines": {
+        "node": ">=20.9.0"
+      }
+    },
+    "node_modules/@img/sharp-linux-ppc64": {
+      "version": "0.35.2",
+      "engines": {
+        "node": ">=20.9.0"
+      }
+    },
+    "node_modules/@img/sharp-linux-riscv64": {
+      "version": "0.35.2",
+      "engines": {
+        "node": ">=20.9.0"
+      }
+    },
+    "node_modules/@img/sharp-linux-s390x": {
+      "version": "0.35.2",
+      "engines": {
+        "node": ">=20.9.0"
+      }
+    },
+    "node_modules/@img/sharp-linux-x64": {
+      "version": "0.35.2",
+      "engines": {
+        "node": ">=20.9.0"
+      }
+    },
+    "node_modules/@img/sharp-linuxmusl-arm64": {
+      "version": "0.35.2",
+      "engines": {
+        "node": ">=20.9.0"
+      }
+    },
+    "node_modules/@img/sharp-linuxmusl-x64": {
+      "version": "0.35.2",
+      "engines": {
+        "node": ">=20.9.0"
+      }
+    },
+    "node_modules/@img/sharp-wasm32": {
+      "version": "0.35.2",
+      "engines": {
+        "node": ">=20.9.0"
+      }
+    },
+    "node_modules/@img/sharp-webcontainers-wasm32": {
+      "version": "0.35.2",
+      "engines": {
+        "node": ">=20.9.0"
+      }
+    },
+    "node_modules/@img/sharp-win32-arm64": {
+      "version": "0.35.2",
+      "engines": {
+        "node": ">=20.9.0"
+      }
+    },
+    "node_modules/@img/sharp-win32-ia32": {
+      "version": "0.35.2",
+      "engines": {
+        "node": "^20.9.0"
+      }
+    },
+    "node_modules/@img/sharp-win32-x64": {
+      "version": "0.35.2",
+      "engines": {
+        "node": ">=20.9.0"
+      }
+    },
+    "node_modules/@jridgewell/resolve-uri": {
+      "version": "3.1.2",
+      "engines": {
+        "node": ">=6.0.0"
+      }
+    },
+    "node_modules/@jridgewell/sourcemap-codec": {
+      "version": "1.6.0",
+      "engines": {}
+    },
+    "node_modules/@jridgewell/trace-mapping": {
+      "version": "0.3.31",
+      "engines": {}
+    },
+    "node_modules/@oxc-project/types": {
+      "version": "0.148.0",
+      "engines": {}
+    },
+    "node_modules/@poppinss/colors": {
+      "version": "4.1.6",
+      "engines": {}
+    },
+    "node_modules/@poppinss/dumper": {
+      "version": "0.6.5",
+      "engines": {}
+    },
+    "node_modules/@poppinss/exception": {
+      "version": "1.2.3",
+      "engines": {}
+    },
+    "node_modules/@rolldown/binding-android-arm-eabi": {
+      "version": "1.2.7",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    "node_modules/@rolldown/binding-android-arm64": {
+      "version": "1.2.7",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    "node_modules/@rolldown/binding-darwin-arm64": {
+      "version": "1.2.7",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    "node_modules/@rolldown/binding-darwin-x64": {
+      "version": "1.2.7",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    "node_modules/@rolldown/binding-freebsd-x64": {
+      "version": "1.2.7",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    "node_modules/@rolldown/binding-linux-arm-gnueabihf": {
+      "version": "1.2.7",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    "node_modules/@rolldown/binding-linux-arm64-gnu": {
+      "version": "1.2.7",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    "node_modules/@rolldown/binding-linux-arm64-musl": {
+      "version": "1.2.7",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    "node_modules/@rolldown/binding-linux-ppc64-gnu": {
+      "version": "1.2.7",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    "node_modules/@rolldown/binding-linux-s390x-gnu": {
+      "version": "1.2.7",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    "node_modules/@rolldown/binding-linux-x64-gnu": {
+      "version": "1.2.7",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    "node_modules/@rolldown/binding-linux-x64-musl": {
+      "version": "1.2.7",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    "node_modules/@rolldown/binding-openharmony-arm64": {
+      "version": "1.2.7",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    "node_modules/@rolldown/binding-win32-arm64-msvc": {
+      "version": "1.2.7",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    "node_modules/@rolldown/binding-win32-x64-msvc": {
+      "version": "1.2.7",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    "node_modules/@rolldown/pluginutils": {
+      "version": "1.0.1",
+      "engines": {}
+    },
+    "node_modules/@sindresorhus/is": {
+      "version": "7.2.0",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@speed-highlight/core": {
+      "version": "1.2.24",
+      "engines": {}
+    },
+    "node_modules/@types/chai": {
+      "version": "5.2.3",
+      "engines": {}
+    },
+    "node_modules/@types/deep-eql": {
+      "version": "4.0.2",
+      "engines": {}
+    },
+    "node_modules/@types/estree": {
+      "version": "1.0.9",
+      "engines": {}
+    },
+    "node_modules/@typescript/typescript-aix-ppc64": {
+      "version": "7.0.2",
+      "engines": {
+        "node": ">=16.20.0"
+      }
+    },
+    "node_modules/@typescript/typescript-darwin-arm64": {
+      "version": "7.0.2",
+      "engines": {
+        "node": ">=16.20.0"
+      }
+    },
+    "node_modules/@typescript/typescript-darwin-x64": {
+      "version": "7.0.2",
+      "engines": {
+        "node": ">=16.20.0"
+      }
+    },
+    "node_modules/@typescript/typescript-freebsd-arm64": {
+      "version": "7.0.2",
+      "engines": {
+        "node": ">=16.20.0"
+      }
+    },
+    "node_modules/@typescript/typescript-freebsd-x64": {
+      "version": "7.0.2",
+      "engines": {
+        "node": ">=16.20.0"
+      }
+    },
+    "node_modules/@typescript/typescript-linux-arm": {
+      "version": "7.0.2",
+      "engines": {
+        "node": ">=16.20.0"
+      }
+    },
+    "node_modules/@typescript/typescript-linux-arm64": {
+      "version": "7.0.2",
+      "engines": {
+        "node": ">=16.20.0"
+      }
+    },
+    "node_modules/@typescript/typescript-linux-loong64": {
+      "version": "7.0.2",
+      "engines": {
+        "node": ">=16.20.0"
+      }
+    },
+    "node_modules/@typescript/typescript-linux-mips64el": {
+      "version": "7.0.2",
+      "engines": {
+        "node": ">=16.20.0"
+      }
+    },
+    "node_modules/@typescript/typescript-linux-ppc64": {
+      "version": "7.0.2",
+      "engines": {
+        "node": ">=16.20.0"
+      }
+    },
+    "node_modules/@typescript/typescript-linux-riscv64": {
+      "version": "7.0.2",
+      "engines": {
+        "node": ">=16.20.0"
+      }
+    },
+    "node_modules/@typescript/typescript-linux-s390x": {
+      "version": "7.0.2",
+      "engines": {
+        "node": ">=16.20.0"
+      }
+    },
+    "node_modules/@typescript/typescript-linux-x64": {
+      "version": "7.0.2",
+      "engines": {
+        "node": ">=16.20.0"
+      }
+    },
+    "node_modules/@typescript/typescript-netbsd-arm64": {
+      "version": "7.0.2",
+      "engines": {
+        "node": ">=16.20.0"
+      }
+    },
+    "node_modules/@typescript/typescript-netbsd-x64": {
+      "version": "7.0.2",
+      "engines": {
+        "node": ">=16.20.0"
+      }
+    },
+    "node_modules/@typescript/typescript-openbsd-arm64": {
+      "version": "7.0.2",
+      "engines": {
+        "node": ">=16.20.0"
+      }
+    },
+    "node_modules/@typescript/typescript-openbsd-x64": {
+      "version": "7.0.2",
+      "engines": {
+        "node": ">=16.20.0"
+      }
+    },
+    "node_modules/@typescript/typescript-sunos-x64": {
+      "version": "7.0.2",
+      "engines": {
+        "node": ">=16.20.0"
+      }
+    },
+    "node_modules/@typescript/typescript-win32-arm64": {
+      "version": "7.0.2",
+      "engines": {
+        "node": ">=16.20.0"
+      }
+    },
+    "node_modules/@typescript/typescript-win32-x64": {
+      "version": "7.0.2",
+      "engines": {
+        "node": ">=16.20.0"
+      }
+    },
+    "node_modules/@vitest/mocker": {
+      "version": "5.0.0",
+      "engines": {}
+    },
+    "node_modules/@vitest/spy": {
+      "version": "5.0.0",
+      "engines": {}
+    },
+    "node_modules/assertion-error": {
+      "version": "2.0.1",
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/blake3-wasm": {
+      "version": "2.1.5",
+      "engines": {}
+    },
+    "node_modules/chai": {
+      "version": "6.2.2",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/cookie": {
+      "version": "1.1.1",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/detect-libc": {
+      "version": "2.1.2",
+      "engines": {
+        "node": ">=8"
+      }
+    },
+    "node_modules/error-stack-parser-es": {
+      "version": "1.0.5",
+      "engines": {}
+    },
+    "node_modules/es-module-lexer": {
+      "version": "2.3.2",
+      "engines": {}
+    },
+    "node_modules/esbuild": {
+      "version": "0.28.1",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/estree-walker": {
+      "version": "3.0.3",
+      "engines": {}
+    },
+    "node_modules/expect-type": {
+      "version": "1.4.0",
+      "engines": {
+        "node": ">=12.0.0"
+      }
+    },
+    "node_modules/fdir": {
+      "version": "6.5.0",
+      "engines": {
+        "node": ">=12.0.0"
+      }
+    },
+    "node_modules/fsevents": {
+      "version": "2.3.3",
+      "engines": {
+        "node": "^8.16.0 || ^10.6.0 || >=11.0.0"
+      }
+    },
+    "node_modules/kleur": {
+      "version": "4.1.5",
+      "engines": {
+        "node": ">=6"
+      }
+    },
+    "node_modules/lightningcss": {
+      "version": "1.33.0",
+      "engines": {
+        "node": ">= 12.0.0"
+      }
+    },
+    "node_modules/lightningcss-android-arm64": {
+      "version": "1.33.0",
+      "engines": {
+        "node": ">= 12.0.0"
+      }
+    },
+    "node_modules/lightningcss-darwin-arm64": {
+      "version": "1.33.0",
+      "engines": {
+        "node": ">= 12.0.0"
+      }
+    },
+    "node_modules/lightningcss-darwin-x64": {
+      "version": "1.33.0",
+      "engines": {
+        "node": ">= 12.0.0"
+      }
+    },
+    "node_modules/lightningcss-freebsd-x64": {
+      "version": "1.33.0",
+      "engines": {
+        "node": ">= 12.0.0"
+      }
+    },
+    "node_modules/lightningcss-linux-arm-gnueabihf": {
+      "version": "1.33.0",
+      "engines": {
+        "node": ">= 12.0.0"
+      }
+    },
+    "node_modules/lightningcss-linux-arm64-gnu": {
+      "version": "1.33.0",
+      "engines": {
+        "node": ">= 12.0.0"
+      }
+    },
+    "node_modules/lightningcss-linux-arm64-musl": {
+      "version": "1.33.0",
+      "engines": {
+        "node": ">= 12.0.0"
+      }
+    },
+    "node_modules/lightningcss-linux-x64-gnu": {
+      "version": "1.33.0",
+      "engines": {
+        "node": ">= 12.0.0"
+      }
+    },
+    "node_modules/lightningcss-linux-x64-musl": {
+      "version": "1.33.0",
+      "engines": {
+        "node": ">= 12.0.0"
+      }
+    },
+    "node_modules/lightningcss-win32-arm64-msvc": {
+      "version": "1.33.0",
+      "engines": {
+        "node": ">= 12.0.0"
+      }
+    },
+    "node_modules/lightningcss-win32-x64-msvc": {
+      "version": "1.33.0",
+      "engines": {
+        "node": ">= 12.0.0"
+      }
+    },
+    "node_modules/magic-string": {
+      "version": "1.2.3",
+      "engines": {}
+    },
+    "node_modules/miniflare": {
+      "version": "5.20260907.0-alpha",
+      "engines": {
+        "node": ">=22.0.0"
+      }
+    },
+    "node_modules/nanoid": {
+      "version": "3.3.18",
+      "engines": {
+        "node": "^10 || ^12 || ^13.7 || ^14 || >=15.0.1"
+      }
+    },
+    "node_modules/obug": {
+      "version": "2.1.4",
+      "engines": {
+        "node": ">=12.20.0"
+      }
+    },
+    "node_modules/path-to-regexp": {
+      "version": "6.3.0",
+      "engines": {}
+    },
+    "node_modules/pathe": {
+      "version": "2.0.3",
+      "engines": {}
+    },
+    "node_modules/picocolors": {
+      "version": "1.1.1",
+      "engines": {}
+    },
+    "node_modules/picomatch": {
+      "version": "4.0.7",
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/postcss": {
+      "version": "8.5.28",
+      "engines": {
+        "node": "^10 || ^12 || >=14"
+      }
+    },
+    "node_modules/rolldown": {
+      "version": "1.2.7",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    "node_modules/semver": {
+      "version": "7.8.5",
+      "engines": {
+        "node": ">=10"
+      }
+    },
+    "node_modules/sharp": {
+      "version": "0.35.2",
+      "engines": {
+        "node": ">=20.9.0"
+      }
+    },
+    "node_modules/siginfo": {
+      "version": "2.0.0",
+      "engines": {}
+    },
+    "node_modules/source-map-js": {
+      "version": "1.2.1",
+      "engines": {
+        "node": ">=0.10.0"
+      }
+    },
+    "node_modules/stackback": {
+      "version": "0.0.2",
+      "engines": {}
+    },
+    "node_modules/std-env": {
+      "version": "4.2.0",
+      "engines": {}
+    },
+    "node_modules/supports-color": {
+      "version": "10.2.2",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/tinybench": {
+      "version": "6.1.4",
+      "engines": {
+        "node": ">=20.0.0"
+      }
+    },
+    "node_modules/tinyexec": {
+      "version": "1.3.0",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/tinyglobby": {
+      "version": "0.2.17",
+      "engines": {
+        "node": ">=12.0.0"
+      }
+    },
+    "node_modules/tslib": {
+      "version": "2.8.1",
+      "engines": {}
+    },
+    "node_modules/typescript": {
+      "version": "7.0.2",
+      "engines": {
+        "node": ">=16.20.0"
+      }
+    },
+    "node_modules/undici": {
+      "version": "7.29.0",
+      "engines": {
+        "node": ">=20.18.1"
+      }
+    },
+    "node_modules/unenv": {
+      "version": "2.0.0-rc.24",
+      "engines": {}
+    },
+    "node_modules/vite": {
+      "version": "8.2.2",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    "node_modules/vitest": {
+      "version": "5.0.0",
+      "engines": {
+        "node": "^22.12.0 || ^24.0.0 || >=26.0.0"
+      }
+    },
+    "node_modules/why-is-node-running": {
+      "version": "2.3.0",
+      "engines": {
+        "node": ">=8"
+      }
+    },
+    "node_modules/workerd": {
+      "version": "1.20260907.1",
+      "engines": {
+        "node": ">=16"
+      }
+    },
+    "node_modules/wrangler": {
+      "version": "4.129.1",
+      "engines": {
+        "node": ">=22.0.0"
+      }
+    },
+    "node_modules/ws": {
+      "version": "8.21.0",
+      "engines": {
+        "node": ">=10.0.0"
+      }
+    },
+    "node_modules/youch": {
+      "version": "4.1.0-beta.10",
+      "engines": {}
+    },
+    "node_modules/youch-core": {
+      "version": "0.3.3",
+      "engines": {}
+    }
+  },
+  "observed_windows": {
+    "node_selected": "22.23.4",
+    "node_on_default_path": "22.13.1",
+    "npm_on_default_path": "10.9.2",
+    "python": "3.13.2",
+    "ffmpeg": "9.0.2",
+    "typescript": "7.0.2",
+    "vitest": "5.0.0",
+    "wrangler": "4.129.1"
+  },
+  "python_dependencies": "Standard library only. IANA tzdata must be available; cwebp or FFmpeg for TikTok PNG conversion; sips or FFmpeg for Instagram PNG conversion; ffprobe for metadata.",
+  "mac_status": "not_accessed_not_tested",
+  "runtime_note": "The selected Windows Node directory contains node.exe only; run_project.py npm target is absent. Validation uses the selected node.exe and existing dependency executables in an isolated copy."
+}

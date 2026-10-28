@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "source_unchanged": true,
+  "instagram_jpeg_bytes": 45651,
+  "tiktok_webp_bytes": 506174,
+  "cache_reuse": true,
+  "uploads": 0
+}

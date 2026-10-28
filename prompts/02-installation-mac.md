@@ -1,0 +1,11 @@
+# Prompt d'installation Mac — à utiliser après autorisation (nouveau)
+
+Commence par lire `document.md` et les preuves du paquet. La préparation de l'export n'autorisait aucun accès au Mac. Sans nouvelle autorisation humaine explicite de l'hôte et de l'installation, reste dans ton workspace cloud et rends un plan prêt à exécuter. Ne tente ni SSH, ni navigateur, ni Remote Control, ni partage disque pour contourner cette restriction. Aucune session Discord ni aucun fichier ou navigateur appartenant à une autre tâche ne doivent être ouverts.
+
+Si l'accès et l'installation sont désormais explicitement autorisés, identifie les instructions applicables, OS, architecture et runtime. Choisis un dossier neuf ; inventorie uniquement les destinations Social Publisher et sauvegarde les fichiers existants avant rapprochement. Installe d'abord en HOME de qualification isolé. Copie le service, le skill complet avec `social_queue.py`, puis le lanceur portable. Définis `SOCIAL_PUBLISHER_SERVICE_ROOT`, utilise Python 3 et conserve le lockfile. N'écrase aucun registre, skill ou lanceur existant sans décision de rapprochement.
+
+Installe les dépendances dans la nouvelle copie et exécute les contrôles TypeScript, Vitest, Python, manifeste, migrations locales et démo hors ligne. Remplace les placeholders du registre de démo par des chemins absolus de qualification. Tiens compte du fait que les commandes API ignorent `SOCIAL_PUBLISHER_REGISTRY`. Qualifie les conversions avec `sips`, `cwebp` ou FFmpeg et `ffprobe` disponibles. Ne lis aucun coffre et n'utilise aucun secret réel pour les contrôles hors ligne.
+
+Pas de LaunchAgent, cron Mac, serveur permanent, déploiement, OAuth, soumission ou publication sans demande distincte. Une installation réelle peut être proposée seulement après les résultats de qualification et la résolution des collisions existantes. Les secrets devront être injectés par une voie sécurisée autorisée, sans copie de coffre Windows, sans valeur dans les prompts ou arguments.
+
+Rends l'inventaire exact des fichiers créés/modifiés, sauvegardes, versions, tests, processus arrêtés et procédure de retour arrière adaptée aux chemins constatés. Ne déclare « testé Mac » que pour des opérations réellement exécutées sur cet hôte autorisé.

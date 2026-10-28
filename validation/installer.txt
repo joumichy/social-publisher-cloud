@@ -1,0 +1,35 @@
+{
+  "valid": true,
+  "project": "demo",
+  "queue": "C:\\Users\\User\\Documents\\Codex\\2026-10-29\\task\\verification\\tmp\\publisher-installer-lh4tu83r\\instance with spaces\\projects\\demo\\queue.json",
+  "issues": []
+}
+{
+  "valid": true,
+  "project": "demo",
+  "queue": "C:\\Users\\User\\Documents\\Codex\\2026-10-29\\task\\verification\\tmp\\publisher-installer-hqpznp7j\\instance with spaces\\projects\\demo\\queue.json",
+  "issues": []
+}
+{
+  "valid": true,
+  "project": "demo",
+  "queue": "C:\\Users\\User\\Documents\\Codex\\2026-10-29\\task\\verification\\tmp\\publisher-installer-wqwnt0yl\\instance with spaces\\projects\\demo\\queue.json",
+  "issues": []
+}
+{
+  "valid": true,
+  "project": "demo",
+  "queue": "C:\\Users\\User\\Documents\\Codex\\2026-10-29\\task\\verification\\tmp\\publisher-installer-dgskxvxn\\instance with spaces\\projects\\demo\\queue.json",
+  "issues": []
+}
+{
+  "valid": true,
+  "project": "demo",
+  "queue": "C:\\Users\\User\\Documents\\Codex\\2026-10-29\\task\\verification\\tmp\\publisher-installer-lft840z8\\instance with spaces\\projects\\demo\\queue.json",
+  "issues": []
+}
+......
+----------------------------------------------------------------------
+Ran 6 tests in 2.912s
+
+OK

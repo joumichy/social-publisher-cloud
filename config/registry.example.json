@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "browser": {
+    "name": "Chrome",
+    "profile": "A_RENSEIGNER"
+  },
+  "api": {
+    "service_root": "__SERVICE_ROOT__",
+    "base_url": "http://127.0.0.1:8787",
+    "deployment_status": "not_deployed",
+    "scheduler": "cloudflare-cron",
+    "secret_storage": "not_configured"
+  },
+  "projects": [
+    {
+      "id": "demo",
+      "brand": "Exemple",
+      "root": "__DEMO_ROOT__",
+      "queue_path": "queue.json"
+    }
+  ],
+  "accounts": [
+    {
+      "id": "demo-instagram",
+      "project_id": "demo",
+      "platform": "instagram",
+      "expected_identity": "example-account",
+      "connection_state": "unconfigured",
+      "execution_provider": "api",
+      "api_connection_state": "needs_connection",
+      "scheduler_provider": "native",
+      "native_horizon_days": 29,
+      "scheduler_url": "https://business.facebook.com/latest/content_calendar"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "valid": true,
+  "demo_validation": "pass",
+  "demo_plan": "draft",
+  "draft_submission": "rejected_before_upload",
+  "network_calls": 0,
+  "migrations_on_empty_sqlite": 9,
+  "tables": [
+    "account_targets",
+    "accounts",
+    "advertisement_media",
+    "advertisements",
+    "attempts",
+    "media",
+    "oauth_states",
+    "publication_media",
+    "publications"
+  ],
+  "sqlite_version": "3.45.3",
+  "production_and_mac": "not_accessed"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@stellark/social-publisher",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "vitest run && npm run test:python",
+    "test:python": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s test_python -p 'test_*.py'",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "types": "wrangler types",
+    "db:local": "wrangler d1 migrations apply social-publisher --local",
+    "db:remote": "wrangler d1 migrations apply social-publisher --remote"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260907.1",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.0",
+    "wrangler": "^4.129.1"
+  }
+}

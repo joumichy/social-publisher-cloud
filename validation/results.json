@@ -1,0 +1,92 @@
+{
+  "status": "qualified_with_known_limitations",
+  "checked_at_utc": "2026-10-28T23:36:03.400752+00:00",
+  "environment": "Windows; no Mac access; no provider calls or deployment",
+  "tests": [
+    {
+      "name": "typescript-fresh-install",
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "vitest-fresh-install",
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "real-media",
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "offline-acceptance",
+      "exit_code": 0,
+      "passed": true
+    }
+  ],
+  "existing_python_suite": {
+    "passed": 8,
+    "total": 9,
+    "failed": 1,
+    "failure": "Existing synthetic PNG fixture fails FFmpeg decoding with inflate returned error -3. Source fixture and implementation preserved.",
+    "evidence": "python_existing.txt",
+    "real_png_conversion": "JPEG and WebP passed separately; source unchanged; no upload"
+  },
+  "installer_suite": {
+    "passed": 6,
+    "total": 6,
+    "covers": [
+      "isolated runnable install",
+      "existing destination untouched",
+      "cloud config local only",
+      "wrong worker/Cron deploy rejected",
+      "workers.dev without DNS",
+      "rollback detects changed file without deletion"
+    ]
+  },
+  "full_installation": {
+    "passed": true,
+    "dependencies": "npm ci: 74 packages installed from registry, then from scoped cache in a separate fresh prefix",
+    "receipt_status": "installed",
+    "destination": "C:\\Users\\User\\Documents\\Codex\\2026-10-29\\task\\verification\\final full install",
+    "profile": "isolated",
+    "demo_valid": true,
+    "cloud_deployed": false
+  },
+  "worker_bundle": {
+    "passed": true,
+    "command": "wrangler deploy --dry-run --outdir <workspace>/verification/bundle --config wrangler.jsonc",
+    "bundle_bytes": 120620,
+    "cloud_mutation": false
+  },
+  "source_hashes_unchanged": true,
+  "source_mismatches": [],
+  "original_app_code_modified": false,
+  "source_git_commit": null,
+  "source_git_limit": "No service .git directory observed; git rev-parse on service root was denied. No Git SHA claimed.",
+  "resolved_environment_issues": [
+    "Sandbox default temp directory inaccessible: scoped workspace TEMP/TMP used.",
+    "Initial npm DNS resolution unavailable in sandbox: explicit scoped network escalation accepted; full npm install succeeded.",
+    "Wrangler default log path outside workspace rejected: isolated APPDATA/LOCALAPPDATA/XDG_CONFIG_HOME used for dry run."
+  ],
+  "not_tested": [
+    "Mac OS/architecture and installation",
+    "real OAuth and domain ownership",
+    "real D1/R2 runtime or remote migrations",
+    "provider publication and advertising",
+    "cloud deployment or live duplicate"
+  ],
+  "public_package_exclusions": [
+    "secrets and tokens",
+    "real env files",
+    "operational queues, account state and personal databases",
+    "browser sessions and protected task identifiers",
+    "node_modules and caches"
+  ],
+  "free_origin_option": {
+    "cli": "--workers-subdomain",
+    "docs": "DOMAINE-GRATUIT.md",
+    "dns_or_purchase_executed": false
+  },
+  "delivery_scope": "Export + installer + public GitHub package. Cloud duplicate prepared; no change to original production. Mac stays unauthorized."
+}

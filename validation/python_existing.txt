@@ -1,0 +1,22 @@
+....E....
+======================================================================
+ERROR: test_instagram_png_becomes_cached_jpeg_without_changing_source (test_social_api.MediaPreparationTest.test_instagram_png_becomes_cached_jpeg_without_changing_source)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\User\Documents\Codex\2026-10-29\task\verification\service\test_python\test_social_api.py", line 47, in test_instagram_png_becomes_cached_jpeg_without_changing_source
+    prepared = SOCIAL_API.prepare_media_for_upload("instagram", IMAGE_MEDIA, self.source)
+  File "C:\Users\User\Documents\Codex\2026-10-29\task\verification\service\scripts\social_api.py", line 290, in prepare_media_for_upload
+    return prepare_instagram_photo(path)
+  File "C:\Users\User\Documents\Codex\2026-10-29\task\verification\service\scripts\social_api.py", line 278, in prepare_instagram_photo
+    raise ApiCliError(f"Impossible de pr�parer la copie JPEG Instagram : {detail}")
+social_api.ApiCliError: Impossible de pr�parer la copie JPEG Instagram : [png @ 00000194236bf4c0] inflate returned error -3
+[png @ 00000194236b4280] inflate returned error -3
+[vist#0:0/png @ 00000194236b0b00] [dec:png @ 00000194236b2600] Decoding error: Generic error in an external library
+[vist#0:0/png @ 00000194236b0b00] [dec:png @ 00000194236b2600] Decode error rate 1 exceeds maximum 0.666667
+[vist#0:0/png @ 00000194236b0b00] [dec:png @ 00000194236b2600] Task finished with error code: -1145393733 (Error number -1145393733 occurred)
+[vist#0:0/png @ 00000194236b0b00] [dec:png @ 00000194236b2600] Terminating thread with return code -1145393733 (Error number -1145393733 occurred)
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.140s
+
+FAILED (errors=1)

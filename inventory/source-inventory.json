@@ -1,0 +1,516 @@
+{
+  "requested_date": "2026-10-28",
+  "snapshot_utc": "2026-10-28T23:18:52.425015+00:00",
+  "service_root": "C:\\stellark\\social-publisher",
+  "git_commit": null,
+  "git_note": "No .git directory in service root; content hashes identify this working snapshot.",
+  "files": [
+    {
+      "source": "C:\\stellark\\social-publisher\\src\\account-targets.ts",
+      "export_path": "cloud/social-publisher/src/account-targets.ts",
+      "bytes": 3580,
+      "source_sha256": "40e185059157365266170ea3aa68d7f33912d75600ff27b4884a67c864cc1c78",
+      "export_sha256": "40e185059157365266170ea3aa68d7f33912d75600ff27b4884a67c864cc1c78",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\src\\accounts.ts",
+      "export_path": "cloud/social-publisher/src/accounts.ts",
+      "bytes": 3098,
+      "source_sha256": "b110a4c676c6e66fd0e4a407421eff39b6a25e5af8a17b862572e4bb88ff4e74",
+      "export_sha256": "b110a4c676c6e66fd0e4a407421eff39b6a25e5af8a17b862572e4bb88ff4e74",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\src\\advertising.ts",
+      "export_path": "cloud/social-publisher/src/advertising.ts",
+      "bytes": 15326,
+      "source_sha256": "f0f28b4c61adfb9d7bcc20a794522fe5ae821ae128c8e0a4e045df97ce2d2001",
+      "export_sha256": "f0f28b4c61adfb9d7bcc20a794522fe5ae821ae128c8e0a4e045df97ce2d2001",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\src\\constants.ts",
+      "export_path": "cloud/social-publisher/src/constants.ts",
+      "bytes": 1387,
+      "source_sha256": "da00a8d9fbc5db74b6d6fa35b82e5bb7f9d15354bf979a47878fd84ed32e182a",
+      "export_sha256": "da00a8d9fbc5db74b6d6fa35b82e5bb7f9d15354bf979a47878fd84ed32e182a",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\src\\crypto.ts",
+      "export_path": "cloud/social-publisher/src/crypto.ts",
+      "bytes": 2143,
+      "source_sha256": "827795d39933b04f5bfce82ca16f2d43c9dbcf08bb12dc535921ff533e6b018b",
+      "export_sha256": "827795d39933b04f5bfce82ca16f2d43c9dbcf08bb12dc535921ff533e6b018b",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\src\\errors.ts",
+      "export_path": "cloud/social-publisher/src/errors.ts",
+      "bytes": 384,
+      "source_sha256": "7ae58fa73e79ea155abf424ff00fa1a4431ba32b1b61bbd4c8f3e397449a2abf",
+      "export_sha256": "7ae58fa73e79ea155abf424ff00fa1a4431ba32b1b61bbd4c8f3e397449a2abf",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\src\\http.ts",
+      "export_path": "cloud/social-publisher/src/http.ts",
+      "bytes": 1503,
+      "source_sha256": "00677470d7b290f974c429a5e38003612640c3c4aff778753ff9a083f874302f",
+      "export_sha256": "00677470d7b290f974c429a5e38003612640c3c4aff778753ff9a083f874302f",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\src\\index.ts",
+      "export_path": "cloud/social-publisher/src/index.ts",
+      "bytes": 926,
+      "source_sha256": "e635bf94bb68137dc8dbd7fa8f0755851975dbc31fe2a902eb5a72a37edf210d",
+      "export_sha256": "e635bf94bb68137dc8dbd7fa8f0755851975dbc31fe2a902eb5a72a37edf210d",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\src\\legal.ts",
+      "export_path": "cloud/social-publisher/src/legal.ts",
+      "bytes": 4353,
+      "source_sha256": "475b88c55285d0d3a7dd1862113f4195d6953c7f9b339b6b64516f7789d5e8f3",
+      "export_sha256": "475b88c55285d0d3a7dd1862113f4195d6953c7f9b339b6b64516f7789d5e8f3",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\src\\oauth.ts",
+      "export_path": "cloud/social-publisher/src/oauth.ts",
+      "bytes": 27651,
+      "source_sha256": "3a2bb7f7a3abcacb8cd756feab3b2cbe9795e57339c34fcb075aa2f843ceac8b",
+      "export_sha256": "3a2bb7f7a3abcacb8cd756feab3b2cbe9795e57339c34fcb075aa2f843ceac8b",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\src\\providers\\index.ts",
+      "export_path": "cloud/social-publisher/src/providers/index.ts",
+      "bytes": 681,
+      "source_sha256": "452b278f8522433a2213f17a9e7f7f356d24d37d8ef6185bbe57888d88c0a176",
+      "export_sha256": "452b278f8522433a2213f17a9e7f7f356d24d37d8ef6185bbe57888d88c0a176",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\src\\providers\\linkedin.ts",
+      "export_path": "cloud/social-publisher/src/providers/linkedin.ts",
+      "bytes": 5349,
+      "source_sha256": "58da391381f5f8abbffb0c2fe00e264b6b1352e68a8c09ff9112a310d3960fbd",
+      "export_sha256": "58da391381f5f8abbffb0c2fe00e264b6b1352e68a8c09ff9112a310d3960fbd",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\src\\providers\\meta.ts",
+      "export_path": "cloud/social-publisher/src/providers/meta.ts",
+      "bytes": 5618,
+      "source_sha256": "09a15efb72fb4ae5a71b98146fc64adad0cbaaedc8c1dda09d3c833d809af1e3",
+      "export_sha256": "09a15efb72fb4ae5a71b98146fc64adad0cbaaedc8c1dda09d3c833d809af1e3",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\src\\providers\\tiktok.ts",
+      "export_path": "cloud/social-publisher/src/providers/tiktok.ts",
+      "bytes": 9557,
+      "source_sha256": "e6e9cd3d373e4f9f59252f69c949108a5a034ff195e3ae744934a55e9a97d5a4",
+      "export_sha256": "e6e9cd3d373e4f9f59252f69c949108a5a034ff195e3ae744934a55e9a97d5a4",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\src\\publisher.ts",
+      "export_path": "cloud/social-publisher/src/publisher.ts",
+      "bytes": 5572,
+      "source_sha256": "d621fcf22fb5a6e891fef6a5cbe5afe3b5776ed1b3fc2b6990a527a9853bacd9",
+      "export_sha256": "d621fcf22fb5a6e891fef6a5cbe5afe3b5776ed1b3fc2b6990a527a9853bacd9",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\src\\repository.ts",
+      "export_path": "cloud/social-publisher/src/repository.ts",
+      "bytes": 3909,
+      "source_sha256": "2f4d96fdcd76d99cb910fc43e5754598c2be212c6efa315e152c7f57038f54e2",
+      "export_sha256": "2f4d96fdcd76d99cb910fc43e5754598c2be212c6efa315e152c7f57038f54e2",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\src\\router.ts",
+      "export_path": "cloud/social-publisher/src/router.ts",
+      "bytes": 25074,
+      "source_sha256": "485ef137cb6dcb542c0b20ab595b28c0441689210620e15af4ba8214e7c67314",
+      "export_sha256": "485ef137cb6dcb542c0b20ab595b28c0441689210620e15af4ba8214e7c67314",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\src\\tiktok-organic.ts",
+      "export_path": "cloud/social-publisher/src/tiktok-organic.ts",
+      "bytes": 11209,
+      "source_sha256": "951817d74fbdba2e20a957c040ced7933431996a26ba7488eeb53cc396c13952",
+      "export_sha256": "951817d74fbdba2e20a957c040ced7933431996a26ba7488eeb53cc396c13952",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\src\\tokens.ts",
+      "export_path": "cloud/social-publisher/src/tokens.ts",
+      "bytes": 7697,
+      "source_sha256": "6906f24e2b4d34646916f28b9c2fb0ed05270b271d65a99b8e2b6245abd8d3c4",
+      "export_sha256": "6906f24e2b4d34646916f28b9c2fb0ed05270b271d65a99b8e2b6245abd8d3c4",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\src\\types.ts",
+      "export_path": "cloud/social-publisher/src/types.ts",
+      "bytes": 4551,
+      "source_sha256": "c33085f008686a872eef55dcc3bfdffb5d5b793e94abc49be0ddb491f79fb7a8",
+      "export_sha256": "c33085f008686a872eef55dcc3bfdffb5d5b793e94abc49be0ddb491f79fb7a8",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\scripts\\social_api.py",
+      "export_path": "cloud/social-publisher/scripts/social_api.py",
+      "bytes": 33306,
+      "source_sha256": "ff03b0f4fced478df3034fd0d7d1abcd4e273092771282e6fa69ef3826ea3d7e",
+      "export_sha256": "ff03b0f4fced478df3034fd0d7d1abcd4e273092771282e6fa69ef3826ea3d7e",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\scripts\\social_cli.py",
+      "export_path": "cloud/social-publisher/scripts/social_cli.py",
+      "bytes": 981,
+      "source_sha256": "ed4451e7bec242bb4b9ce647060ea94df35c633dc72a6232dafa84819379680a",
+      "export_sha256": "ed4451e7bec242bb4b9ce647060ea94df35c633dc72a6232dafa84819379680a",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\scripts\\windows_credentials.py",
+      "export_path": "cloud/social-publisher/scripts/windows_credentials.py",
+      "bytes": 2700,
+      "source_sha256": "b4da9cca012be2a190e745b33ec9be88f8e70005e1b03df49259d974e1f26aeb",
+      "export_sha256": "b4da9cca012be2a190e745b33ec9be88f8e70005e1b03df49259d974e1f26aeb",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\migrations\\0001_init.sql",
+      "export_path": "cloud/social-publisher/migrations/0001_init.sql",
+      "bytes": 2612,
+      "source_sha256": "f9fe1b72a0f199b67f86a7e4b5c6ec1ec68b1fb77e478d8c7fd64157e4a8d070",
+      "export_sha256": "f9fe1b72a0f199b67f86a7e4b5c6ec1ec68b1fb77e478d8c7fd64157e4a8d070",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\migrations\\0002_oauth_states.sql",
+      "export_path": "cloud/social-publisher/migrations/0002_oauth_states.sql",
+      "bytes": 438,
+      "source_sha256": "bdd591febf6c90a1fc6808190fb9f0f07c0063d1493d3ed21c400337323acbae",
+      "export_sha256": "bdd591febf6c90a1fc6808190fb9f0f07c0063d1493d3ed21c400337323acbae",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\migrations\\0003_account_targets.sql",
+      "export_path": "cloud/social-publisher/migrations/0003_account_targets.sql",
+      "bytes": 432,
+      "source_sha256": "fe02df75886cf98ca6f3ca05b210a58eecd5eca056f8831ed80601725294f990",
+      "export_sha256": "fe02df75886cf98ca6f3ca05b210a58eecd5eca056f8831ed80601725294f990",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\migrations\\0004_oauth_failures.sql",
+      "export_path": "cloud/social-publisher/migrations/0004_oauth_failures.sql",
+      "bytes": 53,
+      "source_sha256": "c070ac4e7f40e50b684423c161ed473df3896df7b2016952a85c9bc0e98afaad",
+      "export_sha256": "c070ac4e7f40e50b684423c161ed473df3896df7b2016952a85c9bc0e98afaad",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\migrations\\0005_advertisements.sql",
+      "export_path": "cloud/social-publisher/migrations/0005_advertisements.sql",
+      "bytes": 1434,
+      "source_sha256": "59ac774bf01a1af0f37086a63314527fe649fe1ce32e7167d53934c431b3e9f0",
+      "export_sha256": "59ac774bf01a1af0f37086a63314527fe649fe1ce32e7167d53934c431b3e9f0",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\migrations\\0006_connection_kind.sql",
+      "export_path": "cloud/social-publisher/migrations/0006_connection_kind.sql",
+      "bytes": 418,
+      "source_sha256": "95967a1ae52d80cb6dc539968b4556a9d1ebd6a592ecafe3a01fbb7755523562",
+      "export_sha256": "95967a1ae52d80cb6dc539968b4556a9d1ebd6a592ecafe3a01fbb7755523562",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\migrations\\0007_tiktok_publication_mode.sql",
+      "export_path": "cloud/social-publisher/migrations/0007_tiktok_publication_mode.sql",
+      "bytes": 1389,
+      "source_sha256": "0e76b9d3d3721968e094435afe0357f3318868ede8ec0f78cb20bce9aca4eea8",
+      "export_sha256": "0e76b9d3d3721968e094435afe0357f3318868ede8ec0f78cb20bce9aca4eea8",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\migrations\\0008_awaiting_creator.sql",
+      "export_path": "cloud/social-publisher/migrations/0008_awaiting_creator.sql",
+      "bytes": 2730,
+      "source_sha256": "a4f87fcd9b118fb62189f82a0a5935e17f49eedb683a868a9e9983edf537da69",
+      "export_sha256": "a4f87fcd9b118fb62189f82a0a5935e17f49eedb683a868a9e9983edf537da69",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\migrations\\0009_stellark_tiktok_ads_identity.sql",
+      "export_path": "cloud/social-publisher/migrations/0009_stellark_tiktok_ads_identity.sql",
+      "bytes": 339,
+      "source_sha256": "fbc5ecab1ef44c10480fd6b358298f64860c94bfde3970605523fe8188941e4e",
+      "export_sha256": "fbc5ecab1ef44c10480fd6b358298f64860c94bfde3970605523fe8188941e4e",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\test\\account-targets.test.ts",
+      "export_path": "cloud/social-publisher/test/account-targets.test.ts",
+      "bytes": 2425,
+      "source_sha256": "a4f67591639df4d5159c38281affdb273271fcf80483a5851cfdd589fae7f546",
+      "export_sha256": "a4f67591639df4d5159c38281affdb273271fcf80483a5851cfdd589fae7f546",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\test\\advertisement-router.test.ts",
+      "export_path": "cloud/social-publisher/test/advertisement-router.test.ts",
+      "bytes": 2724,
+      "source_sha256": "aff45e8d242fcc9053a1d7e042e2c685cc94b25a4689bd39baf58ea54acf3cf9",
+      "export_sha256": "aff45e8d242fcc9053a1d7e042e2c685cc94b25a4689bd39baf58ea54acf3cf9",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\test\\advertising.test.ts",
+      "export_path": "cloud/social-publisher/test/advertising.test.ts",
+      "bytes": 3490,
+      "source_sha256": "02f303eae4beec93d6075f06fdd93397d69b7904ef28517934eaebe43de24c71",
+      "export_sha256": "02f303eae4beec93d6075f06fdd93397d69b7904ef28517934eaebe43de24c71",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\test\\crypto.test.ts",
+      "export_path": "cloud/social-publisher/test/crypto.test.ts",
+      "bytes": 743,
+      "source_sha256": "96877e07afd8497e072cd646c38bf66aad6429339581d516b585858893bb5ce3",
+      "export_sha256": "96877e07afd8497e072cd646c38bf66aad6429339581d516b585858893bb5ce3",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\test\\legal.test.ts",
+      "export_path": "cloud/social-publisher/test/legal.test.ts",
+      "bytes": 660,
+      "source_sha256": "f3a685e0e768eaf518845c6eaaa45e44dff2ca985500028849e66ea789259a92",
+      "export_sha256": "f3a685e0e768eaf518845c6eaaa45e44dff2ca985500028849e66ea789259a92",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\test\\meta.test.ts",
+      "export_path": "cloud/social-publisher/test/meta.test.ts",
+      "bytes": 2145,
+      "source_sha256": "57601196a51478428141d01fb5b08937cc1ff2ef5c29c8652cc194338626741d",
+      "export_sha256": "57601196a51478428141d01fb5b08937cc1ff2ef5c29c8652cc194338626741d",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\test\\oauth.test.ts",
+      "export_path": "cloud/social-publisher/test/oauth.test.ts",
+      "bytes": 4709,
+      "source_sha256": "066e13f92ee20a4de94f46b2dd90036b35c227a0377f818c94a5ab5dcaee0222",
+      "export_sha256": "066e13f92ee20a4de94f46b2dd90036b35c227a0377f818c94a5ab5dcaee0222",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\test\\publisher.test.ts",
+      "export_path": "cloud/social-publisher/test/publisher.test.ts",
+      "bytes": 2312,
+      "source_sha256": "e0c98ff530d41b18fc8b66e8ac0c90bb122852c68f3fd7fd2c6a336a23be544e",
+      "export_sha256": "e0c98ff530d41b18fc8b66e8ac0c90bb122852c68f3fd7fd2c6a336a23be544e",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\test\\repository.test.ts",
+      "export_path": "cloud/social-publisher/test/repository.test.ts",
+      "bytes": 1780,
+      "source_sha256": "3c3363998a96933e492c74261828359f6d0c71395adadecd9f03b20438057567",
+      "export_sha256": "3c3363998a96933e492c74261828359f6d0c71395adadecd9f03b20438057567",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\test\\tiktok-organic.test.ts",
+      "export_path": "cloud/social-publisher/test/tiktok-organic.test.ts",
+      "bytes": 5054,
+      "source_sha256": "baf02814eddd77e0e356a6b867ee0b284861cc71fa63aacc2c6aa4cb14fb8125",
+      "export_sha256": "baf02814eddd77e0e356a6b867ee0b284861cc71fa63aacc2c6aa4cb14fb8125",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\test\\tiktok.test.ts",
+      "export_path": "cloud/social-publisher/test/tiktok.test.ts",
+      "bytes": 11769,
+      "source_sha256": "1a875c740d03f85889830066e33d37b1970245f54bf9f6036f44a26c1e45a3d2",
+      "export_sha256": "1a875c740d03f85889830066e33d37b1970245f54bf9f6036f44a26c1e45a3d2",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\test\\tokens.test.ts",
+      "export_path": "cloud/social-publisher/test/tokens.test.ts",
+      "bytes": 5977,
+      "source_sha256": "00843e0e552f11e6c876a2d8aaddf8a37a1680f34339a3b06ffc334e6de5dbc5",
+      "export_sha256": "00843e0e552f11e6c876a2d8aaddf8a37a1680f34339a3b06ffc334e6de5dbc5",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\test_python\\test_social_api.py",
+      "export_path": "cloud/social-publisher/test_python/test_social_api.py",
+      "bytes": 6183,
+      "source_sha256": "d8a3ce5cec1f3974c7a5ea73551d7e4e49c55e2b4e98c9edf756891e6119c8a0",
+      "export_sha256": "d8a3ce5cec1f3974c7a5ea73551d7e4e49c55e2b4e98c9edf756891e6119c8a0",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\test_python\\test_social_queue_contract.py",
+      "export_path": "cloud/social-publisher/test_python/test_social_queue_contract.py",
+      "bytes": 1576,
+      "source_sha256": "f1bc3bdd09a8f6c3a4869cb543c196015d518fb532e82572dc4678625f1b5ccb",
+      "export_sha256": "f1bc3bdd09a8f6c3a4869cb543c196015d518fb532e82572dc4678625f1b5ccb",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\assets\\stellark-tiktok-app-icon-1024.png",
+      "export_path": "cloud/social-publisher/assets/stellark-tiktok-app-icon-1024.png",
+      "bytes": 225534,
+      "source_sha256": "db01b8c49d1649057a6dffdf166be1540e414df0bbc0cac1d0d7c3df94a823e5",
+      "export_sha256": "db01b8c49d1649057a6dffdf166be1540e414df0bbc0cac1d0d7c3df94a823e5",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\assets\\tiktok-app-icon.png",
+      "export_path": "cloud/social-publisher/assets/tiktok-app-icon.png",
+      "bytes": 861334,
+      "source_sha256": "6165d56b6a35475ee66ee5e47b65d8f6d00d55ad2a1d01911b9d05dc52c64ae3",
+      "export_sha256": "6165d56b6a35475ee66ee5e47b65d8f6d00d55ad2a1d01911b9d05dc52c64ae3",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\package.json",
+      "export_path": "cloud/social-publisher/package.json",
+      "bytes": 704,
+      "source_sha256": "7422474ecd473309a8f9514469dbac6cc7009855158927241032993edae80b17",
+      "export_sha256": "7422474ecd473309a8f9514469dbac6cc7009855158927241032993edae80b17",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\package-lock.json",
+      "export_path": "cloud/social-publisher/package-lock.json",
+      "bytes": 96546,
+      "source_sha256": "9604dff272c683b4256619f189e580a12b0a79f7d9a8993471572e3ce8c2e57c",
+      "export_sha256": "9604dff272c683b4256619f189e580a12b0a79f7d9a8993471572e3ce8c2e57c",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\tsconfig.json",
+      "export_path": "cloud/social-publisher/tsconfig.json",
+      "bytes": 379,
+      "source_sha256": "a39a813e61cb3d727067a9d1cbb1d043276bf3aabb80bb0d22420f8ef39204e5",
+      "export_sha256": "a39a813e61cb3d727067a9d1cbb1d043276bf3aabb80bb0d22420f8ef39204e5",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\.gitignore",
+      "export_path": "cloud/social-publisher/.gitignore",
+      "bytes": 57,
+      "source_sha256": "5afea08cfd4eadc2896c904a447bd4c5bad44bd73169fd6612b7b14e6f58254f",
+      "export_sha256": "5afea08cfd4eadc2896c904a447bd4c5bad44bd73169fd6612b7b14e6f58254f",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\.dev.vars.example",
+      "export_path": "cloud/social-publisher/.dev.vars.example",
+      "bytes": 780,
+      "source_sha256": "d56b02fdde878ccd12d281640ef4dcfe1796a7c5e09e777ebda66079a9c333e0",
+      "export_sha256": "d56b02fdde878ccd12d281640ef4dcfe1796a7c5e09e777ebda66079a9c333e0",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\README.md",
+      "export_path": "cloud/social-publisher/README.md",
+      "bytes": 12331,
+      "source_sha256": "f7606a9728db0f7dbc8cee124260b1d9ede15feefbcf9f72dd1fa57ef226817d",
+      "export_sha256": "f7606a9728db0f7dbc8cee124260b1d9ede15feefbcf9f72dd1fa57ef226817d",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\Users\\User\\.codex\\skills\\social-publisher\\SKILL.md",
+      "export_path": "mac/skill/social-publisher/SKILL.md",
+      "bytes": 8042,
+      "source_sha256": "1ce0f56d6516f63ff068232c64fae53a118a330aa6821322c37acc09e4d4d1d6",
+      "export_sha256": "1ce0f56d6516f63ff068232c64fae53a118a330aa6821322c37acc09e4d4d1d6",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\Users\\User\\.codex\\skills\\social-publisher\\scripts\\social_queue.py",
+      "export_path": "mac/skill/social-publisher/scripts/social_queue.py",
+      "bytes": 34715,
+      "source_sha256": "01a402944c1aa4c60ea384213cdc271e78ea7040f85ec07bc20f18152c02801d",
+      "export_sha256": "01a402944c1aa4c60ea384213cdc271e78ea7040f85ec07bc20f18152c02801d",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\Users\\User\\.codex\\skills\\social-publisher\\references\\queue-contract.md",
+      "export_path": "mac/skill/social-publisher/references/queue-contract.md",
+      "bytes": 4075,
+      "source_sha256": "8a5e6a9ad9add1b0647880cee8d5abf11ee8cfa6400307ee68c8e0d0adb85534",
+      "export_sha256": "8a5e6a9ad9add1b0647880cee8d5abf11ee8cfa6400307ee68c8e0d0adb85534",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\Users\\User\\.codex\\skills\\social-publisher\\references\\browser-runbook.md",
+      "export_path": "mac/skill/social-publisher/references/browser-runbook.md",
+      "bytes": 4208,
+      "source_sha256": "7337607a0507a3f3721daaef612c6f3801f911b8714d4c35da3506b8d0334980",
+      "export_sha256": "7337607a0507a3f3721daaef612c6f3801f911b8714d4c35da3506b8d0334980",
+      "mode": "verbatim"
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\wrangler.jsonc",
+      "export_path": "cloud/social-publisher/wrangler.jsonc",
+      "source_sha256": "e0d5c6dce943228d94634c6d3e164f15a6bdf202136c1031b54e91f06a2775ee",
+      "export_sha256": "4387488137f15647fc292a066347aeee66c6009cf0ec053a38a14e17b1f551c7",
+      "mode": "neutralized",
+      "changes": [
+        "worker review name",
+        "workers.dev off",
+        "cron empty",
+        "loopback public URL",
+        "OAuth public client IDs removed",
+        "D1 UUID zeroed",
+        "review R2 bucket"
+      ]
+    },
+    {
+      "source": "C:\\stellark\\social-publisher\\assets\\tiktok-app-icon.png",
+      "export_path": "examples/demo/media/example.png",
+      "bytes": 861334,
+      "source_sha256": "6165d56b6a35475ee66ee5e47b65d8f6d00d55ad2a1d01911b9d05dc52c64ae3",
+      "export_sha256": "6165d56b6a35475ee66ee5e47b65d8f6d00d55ad2a1d01911b9d05dc52c64ae3",
+      "mode": "verbatim"
+    }
+  ],
+  "exclusions": [
+    "node_modules",
+    ".wrangler",
+    ".git",
+    "__pycache__",
+    ".env and actual .dev.vars",
+    "credential stores and tokens",
+    "browser profiles, cookies and sessions",
+    "real project queues, campaigns, approvals and personal media",
+    "databases, R2 and D1 dumps",
+    "full live registry, production OAuth IDs and D1 UUID from operational configuration"
+  ],
+  "instructions_checked": [
+    "C:/stellark/AGENTS.md",
+    "C:/stellark/tools/windows/PROJECT_RUNTIME_WINDOWS.md",
+    "C:\\Users\\User\\.codex\\skills\\social-publisher\\SKILL.md"
+  ],
+  "instruction_discovery": "No service AGENTS.md, nor .agents/skills at C:/, C:/stellark, service root or user home was found. No brand project contents were traversed.",
+  "prompts_note": "No dedicated prompt directory in service or skill; transferable prompts were authored for this export and are marked new."
+}

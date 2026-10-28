@@ -1,0 +1,5 @@
+#!/bin/sh
+# New portable launcher for this handoff. No credential or installation action.
+set -eu
+: "${SOCIAL_PUBLISHER_SERVICE_ROOT:?Set SOCIAL_PUBLISHER_SERVICE_ROOT to the selected service directory}"
+exec python3 "$SOCIAL_PUBLISHER_SERVICE_ROOT/scripts/social_cli.py" "$@"

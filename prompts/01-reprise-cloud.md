@@ -1,0 +1,11 @@
+# Prompt de reprise — agent cloud (nouveau pour cet export)
+
+Tu reprends le Social Publisher de John Allou à partir du ZIP fourni. Lis d'abord `document.md`, `inventory/source-inventory.json`, `inventory/dependencies.json`, `validation/results.json` et les instructions du workspace. Vérifie l'empreinte externe et `manifest.json` avec `tools/verify_package.py`. Utilise le flux Library officiel de ton propre exécuteur pour matérialiser le ZIP : ne présume pas qu'un chemin Windows existe dans ton environnement.
+
+Objectif de ce tour : préparer et qualifier dans ton workspace une reprise du moteur existant, sans déploiement. Il est déjà fondé sur Worker Cloudflare + D1 + R2, avec CLI Python et skill de file. Conserve les contrats existants ; n'invente pas une nouvelle interface SaaS, un dépôt Git ou un état de production. Les prompts de ce dossier sont nouveaux, les sources applicatives sont un instantané.
+
+N'ouvre aucune session Discord ni aucun fichier ou navigateur appartenant à une autre tâche. Le Mac est non autorisé dans la demande d'origine. Ne le contacte par aucune route, SSH compris. Travaille hors Mac et ne demande une autorisation que pour une action future concrète qui dépend de cet accès. N'installe aucun service permanent, ne connecte aucun compte, n'accorde aucun accès, ne publie rien et ne déclenche pas `run-due`.
+
+Matérialise dans une copie neuve, exécute les contrôles hors ligne documentés et rapproche les divergences connues. Ne réemploie pas les états « ready » historiques, les dates ou les approbations de marques. Le registre fourni n'est qu'une démo non connectée. Attention : `SOCIAL_PUBLISHER_REGISTRY` redirige le gestionnaire de file, mais pas le pont API, qui utilise son chemin HOME fixe.
+
+Retourne les chemins et identifiants Library réellement confirmés, le tableau des contrôles exécutés, les limites, ainsi qu'un plan d'installation Mac concret prêt pour une autorisation ultérieure. En cas de blocage, précise action, cible, raison, état (refusé/en attente/incertain), travail déjà accompli et suite indépendante possible. Ne contourne jamais un refus.

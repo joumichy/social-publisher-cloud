@@ -1,0 +1,472 @@
+{
+  "format": "social-publisher-export-manifest-v1",
+  "algorithm": "sha256",
+  "self_excluded": "manifest.json",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 95,
+      "sha256": "02e059b92af9fba9c9d5fa3ed59a3447926a81174fc52b210aac344e9b8ddafd"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 153,
+      "sha256": "96d3ed12e6db15aabbd3864658705bbef385d9efaedd2e06adafc553dc5b7074"
+    },
+    {
+      "path": "ARCHITECTURE.md",
+      "bytes": 1236,
+      "sha256": "09bf056d3e27556214c4f54a843c850d881cac6e41e607f086899e075788394d"
+    },
+    {
+      "path": "cloud/social-publisher/.dev.vars.example",
+      "bytes": 780,
+      "sha256": "d56b02fdde878ccd12d281640ef4dcfe1796a7c5e09e777ebda66079a9c333e0"
+    },
+    {
+      "path": "cloud/social-publisher/.gitignore",
+      "bytes": 57,
+      "sha256": "5afea08cfd4eadc2896c904a447bd4c5bad44bd73169fd6612b7b14e6f58254f"
+    },
+    {
+      "path": "cloud/social-publisher/assets/stellark-tiktok-app-icon-1024.png",
+      "bytes": 225534,
+      "sha256": "db01b8c49d1649057a6dffdf166be1540e414df0bbc0cac1d0d7c3df94a823e5"
+    },
+    {
+      "path": "cloud/social-publisher/assets/tiktok-app-icon.png",
+      "bytes": 861334,
+      "sha256": "6165d56b6a35475ee66ee5e47b65d8f6d00d55ad2a1d01911b9d05dc52c64ae3"
+    },
+    {
+      "path": "cloud/social-publisher/migrations/0001_init.sql",
+      "bytes": 2612,
+      "sha256": "f9fe1b72a0f199b67f86a7e4b5c6ec1ec68b1fb77e478d8c7fd64157e4a8d070"
+    },
+    {
+      "path": "cloud/social-publisher/migrations/0002_oauth_states.sql",
+      "bytes": 438,
+      "sha256": "bdd591febf6c90a1fc6808190fb9f0f07c0063d1493d3ed21c400337323acbae"
+    },
+    {
+      "path": "cloud/social-publisher/migrations/0003_account_targets.sql",
+      "bytes": 432,
+      "sha256": "fe02df75886cf98ca6f3ca05b210a58eecd5eca056f8831ed80601725294f990"
+    },
+    {
+      "path": "cloud/social-publisher/migrations/0004_oauth_failures.sql",
+      "bytes": 53,
+      "sha256": "c070ac4e7f40e50b684423c161ed473df3896df7b2016952a85c9bc0e98afaad"
+    },
+    {
+      "path": "cloud/social-publisher/migrations/0005_advertisements.sql",
+      "bytes": 1434,
+      "sha256": "59ac774bf01a1af0f37086a63314527fe649fe1ce32e7167d53934c431b3e9f0"
+    },
+    {
+      "path": "cloud/social-publisher/migrations/0006_connection_kind.sql",
+      "bytes": 418,
+      "sha256": "95967a1ae52d80cb6dc539968b4556a9d1ebd6a592ecafe3a01fbb7755523562"
+    },
+    {
+      "path": "cloud/social-publisher/migrations/0007_tiktok_publication_mode.sql",
+      "bytes": 1389,
+      "sha256": "0e76b9d3d3721968e094435afe0357f3318868ede8ec0f78cb20bce9aca4eea8"
+    },
+    {
+      "path": "cloud/social-publisher/migrations/0008_awaiting_creator.sql",
+      "bytes": 2730,
+      "sha256": "a4f87fcd9b118fb62189f82a0a5935e17f49eedb683a868a9e9983edf537da69"
+    },
+    {
+      "path": "cloud/social-publisher/migrations/0009_stellark_tiktok_ads_identity.sql",
+      "bytes": 339,
+      "sha256": "fbc5ecab1ef44c10480fd6b358298f64860c94bfde3970605523fe8188941e4e"
+    },
+    {
+      "path": "cloud/social-publisher/package-lock.json",
+      "bytes": 96546,
+      "sha256": "9604dff272c683b4256619f189e580a12b0a79f7d9a8993471572e3ce8c2e57c"
+    },
+    {
+      "path": "cloud/social-publisher/package.json",
+      "bytes": 704,
+      "sha256": "7422474ecd473309a8f9514469dbac6cc7009855158927241032993edae80b17"
+    },
+    {
+      "path": "cloud/social-publisher/README.md",
+      "bytes": 12331,
+      "sha256": "f7606a9728db0f7dbc8cee124260b1d9ede15feefbcf9f72dd1fa57ef226817d"
+    },
+    {
+      "path": "cloud/social-publisher/scripts/social_api.py",
+      "bytes": 33306,
+      "sha256": "ff03b0f4fced478df3034fd0d7d1abcd4e273092771282e6fa69ef3826ea3d7e"
+    },
+    {
+      "path": "cloud/social-publisher/scripts/social_cli.py",
+      "bytes": 981,
+      "sha256": "ed4451e7bec242bb4b9ce647060ea94df35c633dc72a6232dafa84819379680a"
+    },
+    {
+      "path": "cloud/social-publisher/scripts/windows_credentials.py",
+      "bytes": 2700,
+      "sha256": "b4da9cca012be2a190e745b33ec9be88f8e70005e1b03df49259d974e1f26aeb"
+    },
+    {
+      "path": "cloud/social-publisher/src/account-targets.ts",
+      "bytes": 3580,
+      "sha256": "40e185059157365266170ea3aa68d7f33912d75600ff27b4884a67c864cc1c78"
+    },
+    {
+      "path": "cloud/social-publisher/src/accounts.ts",
+      "bytes": 3098,
+      "sha256": "b110a4c676c6e66fd0e4a407421eff39b6a25e5af8a17b862572e4bb88ff4e74"
+    },
+    {
+      "path": "cloud/social-publisher/src/advertising.ts",
+      "bytes": 15326,
+      "sha256": "f0f28b4c61adfb9d7bcc20a794522fe5ae821ae128c8e0a4e045df97ce2d2001"
+    },
+    {
+      "path": "cloud/social-publisher/src/constants.ts",
+      "bytes": 1387,
+      "sha256": "da00a8d9fbc5db74b6d6fa35b82e5bb7f9d15354bf979a47878fd84ed32e182a"
+    },
+    {
+      "path": "cloud/social-publisher/src/crypto.ts",
+      "bytes": 2143,
+      "sha256": "827795d39933b04f5bfce82ca16f2d43c9dbcf08bb12dc535921ff533e6b018b"
+    },
+    {
+      "path": "cloud/social-publisher/src/errors.ts",
+      "bytes": 384,
+      "sha256": "7ae58fa73e79ea155abf424ff00fa1a4431ba32b1b61bbd4c8f3e397449a2abf"
+    },
+    {
+      "path": "cloud/social-publisher/src/http.ts",
+      "bytes": 1503,
+      "sha256": "00677470d7b290f974c429a5e38003612640c3c4aff778753ff9a083f874302f"
+    },
+    {
+      "path": "cloud/social-publisher/src/index.ts",
+      "bytes": 926,
+      "sha256": "e635bf94bb68137dc8dbd7fa8f0755851975dbc31fe2a902eb5a72a37edf210d"
+    },
+    {
+      "path": "cloud/social-publisher/src/legal.ts",
+      "bytes": 4353,
+      "sha256": "475b88c55285d0d3a7dd1862113f4195d6953c7f9b339b6b64516f7789d5e8f3"
+    },
+    {
+      "path": "cloud/social-publisher/src/oauth.ts",
+      "bytes": 27651,
+      "sha256": "3a2bb7f7a3abcacb8cd756feab3b2cbe9795e57339c34fcb075aa2f843ceac8b"
+    },
+    {
+      "path": "cloud/social-publisher/src/providers/index.ts",
+      "bytes": 681,
+      "sha256": "452b278f8522433a2213f17a9e7f7f356d24d37d8ef6185bbe57888d88c0a176"
+    },
+    {
+      "path": "cloud/social-publisher/src/providers/linkedin.ts",
+      "bytes": 5349,
+      "sha256": "58da391381f5f8abbffb0c2fe00e264b6b1352e68a8c09ff9112a310d3960fbd"
+    },
+    {
+      "path": "cloud/social-publisher/src/providers/meta.ts",
+      "bytes": 5618,
+      "sha256": "09a15efb72fb4ae5a71b98146fc64adad0cbaaedc8c1dda09d3c833d809af1e3"
+    },
+    {
+      "path": "cloud/social-publisher/src/providers/tiktok.ts",
+      "bytes": 9557,
+      "sha256": "e6e9cd3d373e4f9f59252f69c949108a5a034ff195e3ae744934a55e9a97d5a4"
+    },
+    {
+      "path": "cloud/social-publisher/src/publisher.ts",
+      "bytes": 5572,
+      "sha256": "d621fcf22fb5a6e891fef6a5cbe5afe3b5776ed1b3fc2b6990a527a9853bacd9"
+    },
+    {
+      "path": "cloud/social-publisher/src/repository.ts",
+      "bytes": 3909,
+      "sha256": "2f4d96fdcd76d99cb910fc43e5754598c2be212c6efa315e152c7f57038f54e2"
+    },
+    {
+      "path": "cloud/social-publisher/src/router.ts",
+      "bytes": 25074,
+      "sha256": "485ef137cb6dcb542c0b20ab595b28c0441689210620e15af4ba8214e7c67314"
+    },
+    {
+      "path": "cloud/social-publisher/src/tiktok-organic.ts",
+      "bytes": 11209,
+      "sha256": "951817d74fbdba2e20a957c040ced7933431996a26ba7488eeb53cc396c13952"
+    },
+    {
+      "path": "cloud/social-publisher/src/tokens.ts",
+      "bytes": 7697,
+      "sha256": "6906f24e2b4d34646916f28b9c2fb0ed05270b271d65a99b8e2b6245abd8d3c4"
+    },
+    {
+      "path": "cloud/social-publisher/src/types.ts",
+      "bytes": 4551,
+      "sha256": "c33085f008686a872eef55dcc3bfdffb5d5b793e94abc49be0ddb491f79fb7a8"
+    },
+    {
+      "path": "cloud/social-publisher/test/account-targets.test.ts",
+      "bytes": 2425,
+      "sha256": "a4f67591639df4d5159c38281affdb273271fcf80483a5851cfdd589fae7f546"
+    },
+    {
+      "path": "cloud/social-publisher/test/advertisement-router.test.ts",
+      "bytes": 2724,
+      "sha256": "aff45e8d242fcc9053a1d7e042e2c685cc94b25a4689bd39baf58ea54acf3cf9"
+    },
+    {
+      "path": "cloud/social-publisher/test/advertising.test.ts",
+      "bytes": 3490,
+      "sha256": "02f303eae4beec93d6075f06fdd93397d69b7904ef28517934eaebe43de24c71"
+    },
+    {
+      "path": "cloud/social-publisher/test/crypto.test.ts",
+      "bytes": 743,
+      "sha256": "96877e07afd8497e072cd646c38bf66aad6429339581d516b585858893bb5ce3"
+    },
+    {
+      "path": "cloud/social-publisher/test/legal.test.ts",
+      "bytes": 660,
+      "sha256": "f3a685e0e768eaf518845c6eaaa45e44dff2ca985500028849e66ea789259a92"
+    },
+    {
+      "path": "cloud/social-publisher/test/meta.test.ts",
+      "bytes": 2145,
+      "sha256": "57601196a51478428141d01fb5b08937cc1ff2ef5c29c8652cc194338626741d"
+    },
+    {
+      "path": "cloud/social-publisher/test/oauth.test.ts",
+      "bytes": 4709,
+      "sha256": "066e13f92ee20a4de94f46b2dd90036b35c227a0377f818c94a5ab5dcaee0222"
+    },
+    {
+      "path": "cloud/social-publisher/test/publisher.test.ts",
+      "bytes": 2312,
+      "sha256": "e0c98ff530d41b18fc8b66e8ac0c90bb122852c68f3fd7fd2c6a336a23be544e"
+    },
+    {
+      "path": "cloud/social-publisher/test/repository.test.ts",
+      "bytes": 1780,
+      "sha256": "3c3363998a96933e492c74261828359f6d0c71395adadecd9f03b20438057567"
+    },
+    {
+      "path": "cloud/social-publisher/test/tiktok-organic.test.ts",
+      "bytes": 5054,
+      "sha256": "baf02814eddd77e0e356a6b867ee0b284861cc71fa63aacc2c6aa4cb14fb8125"
+    },
+    {
+      "path": "cloud/social-publisher/test/tiktok.test.ts",
+      "bytes": 11769,
+      "sha256": "1a875c740d03f85889830066e33d37b1970245f54bf9f6036f44a26c1e45a3d2"
+    },
+    {
+      "path": "cloud/social-publisher/test/tokens.test.ts",
+      "bytes": 5977,
+      "sha256": "00843e0e552f11e6c876a2d8aaddf8a37a1680f34339a3b06ffc334e6de5dbc5"
+    },
+    {
+      "path": "cloud/social-publisher/test_python/test_social_api.py",
+      "bytes": 6183,
+      "sha256": "d8a3ce5cec1f3974c7a5ea73551d7e4e49c55e2b4e98c9edf756891e6119c8a0"
+    },
+    {
+      "path": "cloud/social-publisher/test_python/test_social_queue_contract.py",
+      "bytes": 1576,
+      "sha256": "f1bc3bdd09a8f6c3a4869cb543c196015d518fb532e82572dc4678625f1b5ccb"
+    },
+    {
+      "path": "cloud/social-publisher/tsconfig.json",
+      "bytes": 379,
+      "sha256": "a39a813e61cb3d727067a9d1cbb1d043276bf3aabb80bb0d22420f8ef39204e5"
+    },
+    {
+      "path": "cloud/social-publisher/wrangler.jsonc",
+      "bytes": 848,
+      "sha256": "4387488137f15647fc292a066347aeee66c6009cf0ec053a38a14e17b1f551c7"
+    },
+    {
+      "path": "CLOUDFLARE.md",
+      "bytes": 4522,
+      "sha256": "22bd37b45f0f0461ffd98841cc989fcd79710c1242afd34132ba3f566db0cd6f"
+    },
+    {
+      "path": "config/registry.example.json",
+      "bytes": 935,
+      "sha256": "1aa967278389b275d0a1de959c68f131b5004f317cefe45291f6a8c49877427c"
+    },
+    {
+      "path": "document.md",
+      "bytes": 24079,
+      "sha256": "b86e9c2a0dfbba2dcb95a4c049abbc78ecc03c3f6b17a2ddb7d0c2a47928bbb5"
+    },
+    {
+      "path": "DOMAINE-GRATUIT.md",
+      "bytes": 6423,
+      "sha256": "b47412c7916d2ada38bf992234e3b71b6f605bcc152b4e2571c1a0513df84477"
+    },
+    {
+      "path": "examples/demo/media/example.png",
+      "bytes": 861334,
+      "sha256": "6165d56b6a35475ee66ee5e47b65d8f6d00d55ad2a1d01911b9d05dc52c64ae3"
+    },
+    {
+      "path": "examples/demo/queue.json",
+      "bytes": 671,
+      "sha256": "9c2e5ac365ab42d0dc28ee6df31d08a0210db1b42131a1208f8ceb9c8909c31e"
+    },
+    {
+      "path": "INSTALLATION.md",
+      "bytes": 1889,
+      "sha256": "544fae795ab19eb9b73618393617279c5f6c7a701943f9547ee84d05506a8ebe"
+    },
+    {
+      "path": "inventory/dependencies.json",
+      "bytes": 23951,
+      "sha256": "167537da732af5962f1ff723ccc39ac828444c35c18bc9914de6c296e767ae55"
+    },
+    {
+      "path": "inventory/observed-projects.public.json",
+      "bytes": 639,
+      "sha256": "6c013e2902861929c4a2c543869bee9cab4ab7a15480188411a543812039a613"
+    },
+    {
+      "path": "inventory/source-inventory.json",
+      "bytes": 25161,
+      "sha256": "7e332751bde6b168645a8c612edc15d2d2d700dc00fbc6dbc84e28c4163679a3"
+    },
+    {
+      "path": "mac/bin/social-publisher",
+      "bytes": 277,
+      "sha256": "dd2f46aa05244f347244962ea779f3874c709f936510ee797242a811d63c8f08"
+    },
+    {
+      "path": "mac/skill/social-publisher/references/browser-runbook.md",
+      "bytes": 4208,
+      "sha256": "7337607a0507a3f3721daaef612c6f3801f911b8714d4c35da3506b8d0334980"
+    },
+    {
+      "path": "mac/skill/social-publisher/references/queue-contract.md",
+      "bytes": 4075,
+      "sha256": "8a5e6a9ad9add1b0647880cee8d5abf11ee8cfa6400307ee68c8e0d0adb85534"
+    },
+    {
+      "path": "mac/skill/social-publisher/scripts/social_queue.py",
+      "bytes": 34715,
+      "sha256": "01a402944c1aa4c60ea384213cdc271e78ea7040f85ec07bc20f18152c02801d"
+    },
+    {
+      "path": "mac/skill/social-publisher/SKILL.md",
+      "bytes": 8042,
+      "sha256": "1ce0f56d6516f63ff068232c64fae53a118a330aa6821322c37acc09e4d4d1d6"
+    },
+    {
+      "path": "prompts/01-reprise-cloud.md",
+      "bytes": 2155,
+      "sha256": "42d15c2fd41fcdedd57a41c5cf04168a6126e9c0681b01fb3e78bdc1e42afaa6"
+    },
+    {
+      "path": "prompts/02-installation-mac.md",
+      "bytes": 2319,
+      "sha256": "a3b5e31e10c66002921b354fc8733b18ee0854ab3978212cd6b3c3b2413d0123"
+    },
+    {
+      "path": "prompts/03-qualification-cloud.md",
+      "bytes": 1965,
+      "sha256": "494f08a2746c9bbc2803bfab3097dbdc3887a51c035efed407016164df412e8e"
+    },
+    {
+      "path": "prompts/04-exploitation-future.md",
+      "bytes": 1678,
+      "sha256": "e123be182d2001371b31568813b69b135c1dc2c731ae023eb2d867294436365f"
+    },
+    {
+      "path": "PUBLICATION.md",
+      "bytes": 1108,
+      "sha256": "4078ceafc08e46039d6e0ca2ce1e30463e83df8237bc5fb1924d31c50dd316a8"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1701,
+      "sha256": "d394941afd4462d286c1ad9a5561c3dd04a38ea5e26b4a1fee2b5c24632f2656"
+    },
+    {
+      "path": "ROLLBACK.md",
+      "bytes": 945,
+      "sha256": "9913c9a0a77d950b92bf68c8d5febf47b5fb32799bae4073eb2560aa3f189b88"
+    },
+    {
+      "path": "social_publisher_setup.py",
+      "bytes": 14655,
+      "sha256": "7074828ecc00e10dcad931a93ac2ddd86a0cc198a3ee7bfad6989f5fd9a9543a"
+    },
+    {
+      "path": "tests/test_installer.py",
+      "bytes": 5923,
+      "sha256": "924500d6855de53c91da97e5ea5a2c6237196cd744a930299ef4e563ceafd15d"
+    },
+    {
+      "path": "tools/acceptance_offline.py",
+      "bytes": 4327,
+      "sha256": "97c1e624b14fdc591c9d6a42f0ea4b84c3959811d9c54af31cf8caf2928d2e45"
+    },
+    {
+      "path": "tools/check_real_media.py",
+      "bytes": 1662,
+      "sha256": "8c74cc3d07756eec4f13ec9cd498886c15df62b5bf5692d024ab8a00835fbeda"
+    },
+    {
+      "path": "tools/verify_package.py",
+      "bytes": 2952,
+      "sha256": "d5ddaaa41e9867fee9a8a2eb7e3689a05b7e58f96f12fe3fbd3b7e4011d2575c"
+    },
+    {
+      "path": "validation/installer.txt",
+      "bytes": 1249,
+      "sha256": "e5b7c7e1bb78120dae98cc762afdec16915ba392c986abc94ace6e2c98560300"
+    },
+    {
+      "path": "validation/offline-acceptance.txt",
+      "bytes": 469,
+      "sha256": "a3373b3e4fda682986d2d967465490fe3a5af481a1a6b089ebeea6e4c5666e19"
+    },
+    {
+      "path": "validation/python_existing.txt",
+      "bytes": 1857,
+      "sha256": "3a3c4d360648b8bb855d5118737b42d8a73b15954e60fe877df2174d23ce4e10"
+    },
+    {
+      "path": "validation/real-media.txt",
+      "bytes": 160,
+      "sha256": "b071029b2e8fe999885b228b00597bbc890a64dc4403199ebf4dd76ac38d40e8"
+    },
+    {
+      "path": "validation/results.json",
+      "bytes": 3337,
+      "sha256": "8f8d015e75c54f76ffc5b9165235942b5cfaab3075f84e316d412a84ca35cba9"
+    },
+    {
+      "path": "validation/secret-scan.json",
+      "bytes": 4818,
+      "sha256": "6680c345bc2c493c77516070494c8ea0c94d0e5eb012dd22a1f0f0e5cfb53323"
+    },
+    {
+      "path": "validation/typescript-fresh-install.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "validation/vitest-fresh-install.txt",
+      "bytes": 259,
+      "sha256": "72540e1d579f2eb40ab52a95fbdd86dc5dc54d37cce93237ccaedb584c7471c0"
+    }
+  ]
+}

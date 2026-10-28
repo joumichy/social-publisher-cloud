@@ -1,0 +1,21 @@
+{
+  "observation_kind": "Local metadata only; no live provider checks",
+  "projects": [
+    {
+      "id": "shortlistable",
+      "brand": "Shortlistable",
+      "queue_path": "marketing/content/pipeline/queue.json"
+    },
+    {
+      "id": "sibyl",
+      "brand": "Sibyl",
+      "queue_path": "marketing/social-publisher/queue.json"
+    },
+    {
+      "id": "fleury",
+      "brand": "Fleury",
+      "queue_path": "marketing/social-publisher/queue.json"
+    }
+  ],
+  "excluded": "Account identifiers, historical connection/review states, browser profiles and full live registry are excluded from the public package."
+}

@@ -1,0 +1,14 @@
+node_modules/
+.wrangler/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+.dev.vars
+*.db
+*.sqlite*
+*.log
+wrangler.instance.jsonc
+installation.json
+.DS_Store

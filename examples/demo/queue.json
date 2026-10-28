@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "project_id": "demo",
+  "brand": "Exemple sans compte connecté",
+  "timezone": "Etc/UTC",
+  "posts": [
+    {
+      "id": "demo-image",
+      "title": "Brouillon de qualification hors ligne",
+      "media": [
+        {
+          "path": "media/example.png",
+          "kind": "image"
+        }
+      ],
+      "deliveries": [
+        {
+          "id": "instagram",
+          "platform": "instagram",
+          "account_ref": "demo-instagram",
+          "publish_at": null,
+          "caption": "Exemple technique. Ne pas publier.",
+          "state": "draft",
+          "receipt": null
+        }
+      ]
+    }
+  ]
+}
