@@ -1,5 +1,7 @@
 # Prompt de reprise — agent cloud (nouveau pour cet export)
 
+Le dashboard est désormais inclus. Lire `DASHBOARD.md` et `validation/dashboard-results.json`. La cible est Mac + Cloudflare ; Windows était seulement la machine de préparation. Installer et conserver `dashboard/`, puis qualifier le lancement `bin/social-publisher dashboard` sur le Mac seulement après autorisation d’accès. Ne pas confondre une validation ou un brouillon daté avec une soumission distante. Cette interface n’a aucune route de publication ; les options cloud sont désactivées par défaut.
+
 Tu reprends le Social Publisher de John Allou à partir du ZIP fourni. Lis d'abord `document.md`, `inventory/source-inventory.json`, `inventory/dependencies.json`, `validation/results.json` et les instructions du workspace. Vérifie l'empreinte externe et `manifest.json` avec `tools/verify_package.py`. Utilise le flux Library officiel de ton propre exécuteur pour matérialiser le ZIP : ne présume pas qu'un chemin Windows existe dans ton environnement.
 
 Objectif de ce tour : préparer et qualifier dans ton workspace une reprise du moteur existant, sans déploiement. Il est déjà fondé sur Worker Cloudflare + D1 + R2, avec CLI Python et skill de file. Conserve les contrats existants ; n'invente pas une nouvelle interface SaaS, un dépôt Git ou un état de production. Les prompts de ce dossier sont nouveaux, les sources applicatives sont un instantané.

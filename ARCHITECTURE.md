@@ -5,6 +5,7 @@ CLI installateur (Python standard)
   └─ instance dédiée
      ├─ bin/social-publisher → profil HOME propre à l'instance
      ├─ service/ → Python CLI + source Worker
+     ├─ dashboard/ → interface locale + serveur loopback Python
      ├─ home/.codex/skills/social-publisher/ → moteur de file
      ├─ home/.codex/social-publisher/registry.json → registre canonique
      ├─ projects/demo/ → brouillon sans compte connecté

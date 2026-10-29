@@ -8,11 +8,15 @@ Le complément sur une adresse sans achat est traité dans `DOMAINE-GRATUIT.md` 
 
 ## Statut de livraison
 
+**Révision du 29 octobre 2026 : le tableau de bord graphique est inclus.** Cible macOS + moteur Cloudflare ; Windows sert uniquement de machine de préparation. Les sources existantes ne comportaient pas de dashboard réutilisable. L’interface locale dans `dashboard/` réutilise le moteur Python et les routes serveur existantes, sans modification du Worker. Son guide complet est `DASHBOARD.md`.
+
+L’installation copie l’interface et permet son lancement par `bin/social-publisher dashboard` ou `social_publisher_setup.py dashboard --prefix <instance>`. Projets, alias non connectés, brouillons, médias locaux, aperçu, planning, validations, approbation locale et annulations sont couverts. Aucun endpoint d’envoi ou de publication n’est ajouté. Les accès cloud sont désactivés par défaut. Les tests et captures sur données factices sont dans `validation/dashboard-results.json` ; aucune qualification Mac ou fournisseur réel n’est prétendue.
+
 Le véritable service a été retrouvé dans `C:/stellark/social-publisher`, avec son skill dans `C:/Users/User/.codex/skills/social-publisher`. Ce paquet contient le moteur existant, ses tests, ses migrations, ses deux icônes, le gestionnaire de files indispensable et des prompts de reprise nouvellement rédigés. Il constitue un instantané de travail identifié par SHA-256 : aucun commit Git n'a été établi, le dossier du service ne comportant pas de `.git`.
 
 L'architecture est déjà cloud : Worker Cloudflare, D1 et R2. Le Mac sert de poste de préparation et de soumission ; il n'héberge pas le planificateur. Une version « agent cloud » peut utiliser les mêmes scripts Python et des fichiers de projet accessibles à son propre exécuteur. Aucun nouveau service permanent ni infrastructure supplémentaire n'est nécessaire au seul transfert du paquet.
 
-**Ce paquet ne constitue ni une migration de l'état de production, ni une installation Mac qualifiée.** Le Mac n'a pas été contacté et demeure non autorisé dans la session d'origine. La session Discord exclue n'a été ni lue, ni pilotée. Aucun navigateur, coffre de secrets, API de production ou compte social n'a été ouvert. Aucune publication, reconnexion, programmation ou dépense n'a été effectuée.
+**Ce paquet ne constitue ni une migration de l'état de production, ni une installation Mac qualifiée.** Le Mac n'a pas été contacté et demeure non autorisé dans la session d'origine. La session Discord exclue n'a été ni lue, ni pilotée. Aucun de ses fichiers ou navigateurs n’a été utilisé. Aucun coffre, API de production ou compte social n’a été ouvert. Un navigateur indépendant neuf a servi uniquement aux tests localhost sur données factices. Aucune publication, reconnexion, programmation ou dépense n'a été effectuée.
 
 ## Cartographie et responsabilités
 
@@ -25,6 +29,7 @@ L'architecture est déjà cloud : Worker Cloudflare, D1 et R2. Le Mac sert de po
 | Skill + gestionnaire de file | `mac/skill/social-publisher` | Validation, dates, approbations et reçus ; requis aussi par l'agent cloud qui utilise la CLI |
 | Lanceur Mac portable | `mac/bin/social-publisher` | Nouveau lanceur pointant explicitement vers le service choisi |
 | Installateur multiplateforme | `social_publisher_setup.py` | Création d'une instance isolée, dépendances npm, diagnostic, configuration et déploiement explicite d'un Worker distinct |
+| Gestion graphique pour Mac | `dashboard/` | Interface locale et serveur loopback ; moteur de file réutilisé ; aucun jeton frontend |
 | Données de démonstration | `examples/demo`, `config/registry.example.json` | Brouillon sans compte connecté, sans date, sans reçu |
 | Prompts de reprise | `prompts` | Instructions nouvellement rédigées à transmettre à l'agent suivant |
 | Preuves et inventaires | `inventory`, `validation` | Provenance, dépendances verrouillées, contrôles et limites |

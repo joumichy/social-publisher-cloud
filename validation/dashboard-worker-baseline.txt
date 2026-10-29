@@ -1,0 +1,9 @@
+
+ RUN  v5.0.0 C:/Users/User/Documents/Codex/2026-10-29/task/verification/final full install/service
+
+
+ Test Files  12 passed (12)
+      Tests  59 passed (59)
+   Start at  09:23:39
+   Duration  662ms (transform 50%, import 29%, worker 14%, tests 7%)
+

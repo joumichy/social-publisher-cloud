@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Social Publisher — Gestion</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="/" aria-label="Social Publisher accueil"><span class="mark">s<span>p</span></span><span>Social<br>Publisher<span class="brand-caption">L’atelier de vos publications</span></span></a>
+    <div class="workspace-label">ESPACE DE TRAVAIL</div>
+    <nav aria-label="Navigation principale">
+      <button class="nav-item active" data-view="posts"><span aria-hidden="true">▤</span>Publications<span id="nav-count" class="nav-count">—</span></button>
+      <button class="nav-item" data-view="planning"><span aria-hidden="true">▦</span>Planning</button>
+      <button class="nav-item" data-view="accounts"><span aria-hidden="true">◎</span>Comptes</button>
+      <button class="nav-item" data-view="projects"><span aria-hidden="true">□</span>Projets</button>
+      <button class="nav-item" data-view="validation"><span aria-hidden="true">✓</span>Validations</button>
+    </nav>
+    <div class="sidebar-note"><span class="local-dot"></span>Session locale<p>Vos fichiers restent dans l’instance choisie. Aucune publication automatique.</p></div>
+    <div class="sidebar-bottom"><span class="avatar">SP</span><div>Votre espace<span>macOS · moteur Cloudflare</span></div></div>
+  </aside>
+
+  <div class="workspace">
+    <header class="topbar"><div class="project-control"><label for="project-select">Projet</label><select id="project-select" aria-label="Projet actif"></select></div><div class="topbar-right"><span class="local-badge"><i></i>PRÉPARATION LOCALE</span><button id="refresh" class="icon-button" aria-label="Recharger les données">↻</button></div></header>
+    <main id="main" tabindex="-1">
+      <div class="page-heading"><div><div class="eyebrow" id="eyebrow">VOTRE ATELIER ÉDITORIAL</div><h1 id="page-title">Publications</h1><p id="page-description">Une idée claire. Le bon format. Le bon moment.</p></div><button id="new-post" class="button primary"><span aria-hidden="true">＋</span> Nouvelle publication</button></div>
+      <div id="notice" class="notice" role="status" hidden></div>
+      <section id="content" aria-label="Contenu du tableau de bord"><div class="loading">Ouverture de votre espace…</div></section>
+      <footer class="page-footer"><span id="footer-source">Données de la file locale</span><span>Préparer avec soin, publier avec accord.</span></footer>
+    </main>
+  </div>
+
+  <dialog id="editor" aria-labelledby="editor-title">
+    <div class="dialog-heading"><div><span class="eyebrow">PRÉPARATION</span><h2 id="editor-title">Nouvelle publication</h2></div><button class="icon-button" data-close="editor" aria-label="Fermer l’éditeur">×</button></div>
+    <form id="post-form">
+      <div class="editor-grid">
+        <div class="edit-fields">
+          <label>Titre de la publication<input id="post-title" required maxlength="200" placeholder="Donnez un nom à cette idée"></label>
+          <label>Diffusion<select id="delivery-select"></select></label>
+          <div class="field-row"><label>Plateforme<select id="post-platform"><option value="instagram">Instagram</option><option value="facebook">Facebook</option><option value="linkedin">LinkedIn</option><option value="tiktok">TikTok</option></select></label><label>Compte / alias<select id="post-account" required></select></label></div>
+          <label>Légende<textarea id="post-caption" rows="5" required placeholder="Votre texte exact, mentions et hashtags compris…"></textarea><span id="caption-count" class="field-hint">0 caractère</span></label>
+          <label>Description accessible<input id="post-alt" placeholder="Décrivez le visuel pour les lecteurs d’écran"></label>
+          <div class="media-label"><span>Médias du projet</span><label class="import-button">＋ Importer des fichiers<input id="media-import" type="file" accept=".png,.jpg,.jpeg,.webp,.mp4,.mov,.m4v,.webm,.pdf" multiple></label></div>
+          <div id="media-fields"></div><button id="add-media" type="button" class="text-button">＋ Ajouter un chemin de média existant</button>
+          <fieldset class="schedule-fields"><legend>Heure souhaitée</legend><div class="field-row"><label>Date et heure locale<input id="post-local-time" type="datetime-local"></label><label>Fuseau IANA<input id="post-timezone" list="timezones" required></label></div><datalist id="timezones"><option value="Europe/Paris"><option value="Europe/Zurich"><option value="Etc/UTC"><option value="America/Montreal"></datalist><label>Si cette heure se répète<select id="post-fold"><option value="">Choisir si nécessaire</option value="0">Première occurrence</option><option value="1">Seconde occurrence</option></select></label><p id="resolved-time" class="field-hint">Sans date : le contenu reste un brouillon non planifié.</p></fieldset>
+          <div id="editor-error" class="form-error" role="alert" hidden></div>
+        </div>
+        <aside class="preview-panel"><div class="eyebrow">APERÇU DU CONTENU</div><div class="post-preview"><div class="preview-account"><span class="avatar small">SP</span><div><strong id="preview-account">Votre compte</strong><span id="preview-platform">Instagram</span></div><span class="preview-more">•••</span></div><div id="preview-media" class="preview-media"><span>Votre média apparaîtra ici</span></div><p id="preview-caption"></p></div><div class="preview-note"><span>✓</span><p>Une modification remet toutes les diffusions éditables de cette publication en brouillon. L’aperçu ne garantit pas le rendu de chaque réseau.</p></div></aside>
+      </div>
+      <div class="dialog-actions"><span id="editor-state">Enregistrement local uniquement</span><button type="button" class="button secondary" data-close="editor">Fermer</button><button id="save-post" class="button primary" type="submit">Enregistrer le brouillon</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="confirmation" class="confirmation" aria-labelledby="confirmation-title"><div class="dialog-heading"><h2 id="confirmation-title">Vérifier cette diffusion</h2><button class="icon-button" data-close="confirmation" aria-label="Fermer la confirmation">×</button></div><div id="confirmation-content"></div><label id="approval-check-label" class="checkbox-label"><input type="checkbox" id="approval-check">J’approuve ce texte exact, les médias, le compte et l’heure affichés.</label><div id="confirmation-error" class="form-error" role="alert" hidden></div><div class="dialog-actions"><button class="button secondary" data-close="confirmation">Revenir</button><button id="confirm-action" class="button primary" disabled>Confirmer</button></div></dialog>
+
+  <dialog id="project-dialog" class="compact-dialog" aria-labelledby="project-dialog-title"><div class="dialog-heading"><h2 id="project-dialog-title">Nouveau projet local</h2><button class="icon-button" data-close="project-dialog" aria-label="Fermer le nouveau projet">×</button></div><form id="project-form"><label>Nom du projet<input name="brand" required placeholder="Votre marque"></label><label>Identifiant<input name="id" required pattern="[a-z0-9][a-z0-9-]*" placeholder="ma-marque"></label><label>Fuseau IANA<input name="timezone" value="Europe/Paris" required></label><p class="field-hint">Crée un dossier et une file vide dans cette instance.</p><div class="form-error" role="alert" hidden></div><div class="dialog-actions"><button class="button primary">Créer le projet</button></div></form></dialog>
+
+  <dialog id="account-dialog" class="compact-dialog" aria-labelledby="account-dialog-title"><div class="dialog-heading"><h2 id="account-dialog-title">Nouvel alias de compte</h2><button class="icon-button" data-close="account-dialog" aria-label="Fermer le nouvel alias">×</button></div><form id="account-form"><label>Alias local<input name="id" required pattern="[a-z0-9][a-z0-9-]*" placeholder="ma-marque-instagram"></label><label>Identité attendue<input name="identity" required placeholder="Nom ou identifiant exact du compte"></label><label>Plateforme<select name="platform"><option value="instagram">Instagram</option><option value="facebook">Facebook</option><option value="linkedin">LinkedIn</option><option value="tiktok">TikTok</option></select></label><label>Contrat TikTok<select name="publication_mode"><option value="creator_inbox_draft">Brouillon dans la boîte du créateur</option><option value="direct_publish">Publication directe (accès requis)</option></select></label><p class="field-hint">Crée un alias local non connecté. Aucun OAuth ni nouvel accès n’est lancé.</p><div class="form-error" role="alert" hidden></div><div class="dialog-actions"><button class="button primary">Créer l’alias local</button></div></form></dialog>
+</body>
+</html>

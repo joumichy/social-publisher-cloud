@@ -979,5 +979,13 @@
   },
   "python_dependencies": "Standard library only. IANA tzdata must be available; cwebp or FFmpeg for TikTok PNG conversion; sips or FFmpeg for Instagram PNG conversion; ffprobe for metadata.",
   "mac_status": "not_accessed_not_tested",
-  "runtime_note": "The selected Windows Node directory contains node.exe only; run_project.py npm target is absent. Validation uses the selected node.exe and existing dependency executables in an isolated copy."
+  "runtime_note": "The selected Windows Node directory contains node.exe only; run_project.py npm target is absent. Validation uses the selected node.exe and existing dependency executables in an isolated copy.",
+  "dashboard": {
+    "runtime": "Python standard library + vanilla HTML/CSS/JavaScript; no npm runtime dependency",
+    "optional_browser_qa": {
+      "python_playwright": "1.55.0",
+      "browser": "isolated installed Chrome on Windows"
+    },
+    "target": "macOS, not tested on target"
+  }
 }

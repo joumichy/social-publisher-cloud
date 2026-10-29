@@ -88,5 +88,6 @@
     "docs": "DOMAINE-GRATUIT.md",
     "dns_or_purchase_executed": false
   },
-  "delivery_scope": "Export + installer + public GitHub package. Cloud duplicate prepared; no change to original production. Mac stays unauthorized."
+  "delivery_scope": "Export + installer + public GitHub package. Cloud duplicate prepared; no change to original production. Mac stays unauthorized.",
+  "dashboard_revision_report": "dashboard-results.json"
 }

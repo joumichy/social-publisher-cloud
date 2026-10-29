@@ -15,8 +15,8 @@
     },
     {
       "path": "ARCHITECTURE.md",
-      "bytes": 1236,
-      "sha256": "09bf056d3e27556214c4f54a843c850d881cac6e41e607f086899e075788394d"
+      "bytes": 1306,
+      "sha256": "277fbe554868715fa6485146112e2f3bd694f8ba7b2d06039815b293819c07b8"
     },
     {
       "path": "cloud/social-publisher/.dev.vars.example",
@@ -304,9 +304,34 @@
       "sha256": "1aa967278389b275d0a1de959c68f131b5004f317cefe45291f6a8c49877427c"
     },
     {
+      "path": "dashboard/server.py",
+      "bytes": 26089,
+      "sha256": "f13c6c808f6dcf1deb21cb9d6e62404af1e3cec5a36c17fdc9b0b5a51bc3548b"
+    },
+    {
+      "path": "dashboard/static/app.js",
+      "bytes": 30316,
+      "sha256": "4f51396f7f2fd52a289d90b22de76b26cf173c36eae0583a5523857c027d1f3d"
+    },
+    {
+      "path": "dashboard/static/index.html",
+      "bytes": 8998,
+      "sha256": "04997cecbd23f00aea4efade2a3626eb54bf2b0628e3f56938970f367e7b9ab8"
+    },
+    {
+      "path": "dashboard/static/styles.css",
+      "bytes": 16275,
+      "sha256": "ce27bf50e56a7ef495be3dd67545186fc666e6b176ef55f1209e8281037751a0"
+    },
+    {
+      "path": "DASHBOARD.md",
+      "bytes": 7561,
+      "sha256": "9667cac265762fc33e7c4d93822c514e3578bd933ae873fc3ba9eaff0ad66c64"
+    },
+    {
       "path": "document.md",
-      "bytes": 24079,
-      "sha256": "b86e9c2a0dfbba2dcb95a4c049abbc78ecc03c3f6b17a2ddb7d0c2a47928bbb5"
+      "bytes": 25317,
+      "sha256": "ffc3a00456c1e7e4f456f7f3f6da91862f51c6a0c229c1b0fe0131deff1c8ee7"
     },
     {
       "path": "DOMAINE-GRATUIT.md",
@@ -325,13 +350,13 @@
     },
     {
       "path": "INSTALLATION.md",
-      "bytes": 1889,
-      "sha256": "544fae795ab19eb9b73618393617279c5f6c7a701943f9547ee84d05506a8ebe"
+      "bytes": 2537,
+      "sha256": "85ddb46d62a46f96b844109b66aff923d107f98b49e2cb68b6d0c12f15c403d0"
     },
     {
       "path": "inventory/dependencies.json",
-      "bytes": 23951,
-      "sha256": "167537da732af5962f1ff723ccc39ac828444c35c18bc9914de6c296e767ae55"
+      "bytes": 24253,
+      "sha256": "5fc6e629a90b29dd0ae56c2cc640d4e7ae3fb22cacebe56b87bf75121e77c143"
     },
     {
       "path": "inventory/observed-projects.public.json",
@@ -370,13 +395,13 @@
     },
     {
       "path": "prompts/01-reprise-cloud.md",
-      "bytes": 2155,
-      "sha256": "42d15c2fd41fcdedd57a41c5cf04168a6126e9c0681b01fb3e78bdc1e42afaa6"
+      "bytes": 2674,
+      "sha256": "f293559ad5d37cb998e65276e826ef6b6e1203f34eb0e13ed833f386d81116e5"
     },
     {
       "path": "prompts/02-installation-mac.md",
-      "bytes": 2319,
-      "sha256": "a3b5e31e10c66002921b354fc8733b18ee0854ab3978212cd6b3c3b2413d0123"
+      "bytes": 2826,
+      "sha256": "8a8627d10e1a43f7ffdd11b7ee829305c3af1c9692dc729c6f0a43e6536773d3"
     },
     {
       "path": "prompts/03-qualification-cloud.md",
@@ -390,28 +415,33 @@
     },
     {
       "path": "PUBLICATION.md",
-      "bytes": 1108,
-      "sha256": "4078ceafc08e46039d6e0ca2ce1e30463e83df8237bc5fb1924d31c50dd316a8"
+      "bytes": 1656,
+      "sha256": "ef32ba61de847ae47ce334067246f8681facf6e340441e55fb29392962772938"
     },
     {
       "path": "README.md",
-      "bytes": 1701,
-      "sha256": "d394941afd4462d286c1ad9a5561c3dd04a38ea5e26b4a1fee2b5c24632f2656"
+      "bytes": 2032,
+      "sha256": "92639b5ae5b6d0542a8eb838729f0499c27321e94aae00f985112d48d3d11f8b"
     },
     {
       "path": "ROLLBACK.md",
-      "bytes": 945,
-      "sha256": "9913c9a0a77d950b92bf68c8d5febf47b5fb32799bae4073eb2560aa3f189b88"
+      "bytes": 1458,
+      "sha256": "e8202cb3df2eb21e9405085bd8651518f7870c9a7724b9fbb8e0160cd0c80bad"
     },
     {
       "path": "social_publisher_setup.py",
-      "bytes": 14655,
-      "sha256": "7074828ecc00e10dcad931a93ac2ddd86a0cc198a3ee7bfad6989f5fd9a9543a"
+      "bytes": 15771,
+      "sha256": "9ca714cf9062027382ade0ac10938899c00d452095cc195b2a43b5c5fb130983"
+    },
+    {
+      "path": "tests/test_dashboard.py",
+      "bytes": 12715,
+      "sha256": "76704c9b45e69f3580b93189b48c4dbce4963b4cb61617cd1fd60466eb29295e"
     },
     {
       "path": "tests/test_installer.py",
-      "bytes": 5923,
-      "sha256": "924500d6855de53c91da97e5ea5a2c6237196cd744a930299ef4e563ceafd15d"
+      "bytes": 6382,
+      "sha256": "87b54814fc9927982234ad98ea767ec21936b5eb731fd8e61ab3912ebb180281"
     },
     {
       "path": "tools/acceptance_offline.py",
@@ -424,9 +454,49 @@
       "sha256": "8c74cc3d07756eec4f13ec9cd498886c15df62b5bf5692d024ab8a00835fbeda"
     },
     {
+      "path": "tools/qa_dashboard.py",
+      "bytes": 13498,
+      "sha256": "c39401554fda9dd9a32d50ccd67842adab791dc1e0c99929c82718c60fa27c67"
+    },
+    {
       "path": "tools/verify_package.py",
       "bytes": 2952,
       "sha256": "d5ddaaa41e9867fee9a8a2eb7e3689a05b7e58f96f12fe3fbd3b7e4011d2575c"
+    },
+    {
+      "path": "validation/dashboard-editor.png",
+      "bytes": 267495,
+      "sha256": "15975f06ff83656731d577d4dea5a7ba96801748ca96d8b94b931a4d12427d03"
+    },
+    {
+      "path": "validation/dashboard-mobile.png",
+      "bytes": 120089,
+      "sha256": "fa11c4d36eb70b61efc0044431e9f309560bca6208a4d84c743e20d6cea0dc59"
+    },
+    {
+      "path": "validation/dashboard-overview.png",
+      "bytes": 119515,
+      "sha256": "05864d124d0044b180d94d3ed86e15a94038a4253c17eb7d4dc2d9939f3d61e3"
+    },
+    {
+      "path": "validation/dashboard-planning.png",
+      "bytes": 59513,
+      "sha256": "da7fc98197b05e6f1d97848bf0da46efd55572ff376fdb787f2a985ab162072c"
+    },
+    {
+      "path": "validation/dashboard-results.json",
+      "bytes": 3321,
+      "sha256": "3bafd4857841599805624d4845e58ea8a16034036d47f46eb9563ccfa40492e0"
+    },
+    {
+      "path": "validation/dashboard-unit.txt",
+      "bytes": 1261,
+      "sha256": "ec79b2af10b2cbd7f10d3a958e614d2df5c80a07cd5b655b2e200c3477684855"
+    },
+    {
+      "path": "validation/dashboard-worker-baseline.txt",
+      "bytes": 259,
+      "sha256": "4002655b957dbf720d2943bb883bf54d83307b253f3c3467d080adb0b05c8c6d"
     },
     {
       "path": "validation/installer.txt",
@@ -450,13 +520,13 @@
     },
     {
       "path": "validation/results.json",
-      "bytes": 3337,
-      "sha256": "8f8d015e75c54f76ffc5b9165235942b5cfaab3075f84e316d412a84ca35cba9"
+      "bytes": 3395,
+      "sha256": "6bad7ed01df37a006b8bfd4f1377c7e4cff0aa08f28d73d1d3927503202b42bb"
     },
     {
       "path": "validation/secret-scan.json",
-      "bytes": 4818,
-      "sha256": "6680c345bc2c493c77516070494c8ea0c94d0e5eb012dd22a1f0f0e5cfb53323"
+      "bytes": 7313,
+      "sha256": "3ffda3a81f8d9f596064b9863caa3a3923a436b26af6015e060389b840ed1587"
     },
     {
       "path": "validation/typescript-fresh-install.txt",

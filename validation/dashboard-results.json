@@ -1,0 +1,78 @@
+{
+  "revision": "dashboard-2026-10-29",
+  "checked_at": "2026-10-29T08:23:40.247089+00:00",
+  "target": "macOS client and Cloudflare engine",
+  "preparation_and_browser_os": "Windows",
+  "existing_dashboard_search": "Canonical service src/assets and Social Publisher skill inventoried: no management dashboard. Existing queue engine and API reused.",
+  "checks": [
+    {
+      "name": "dashboard_and_installer_unittest",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "name": "javascript_syntax",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "name": "worker_typescript_unchanged",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "name": "worker_vitest_unchanged",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "name": "offline_acceptance",
+      "passed": true,
+      "exit_code": 0
+    }
+  ],
+  "unit_cases": 17,
+  "browser": {
+    "passed": true,
+    "checks": [
+      "overview renders actual synthetic queue and unconfigured aliases",
+      "file picker imports media into the selected project only",
+      "create double-click writes one draft with canonical UTC offset",
+      "invalid media leaves queue unchanged; caption HTML is rendered as text",
+      "approval requires exact confirmation; editing removes approval",
+      "cancellation is confirmed and repeated button is disabled",
+      "DST gap and fold rejected; explicit second occurrence saved",
+      "local alias creation is unique and never connects an account",
+      "project creation isolates queue and project switching restores correct data",
+      "weekly planning and structural validation are functional without publication",
+      "HTTP failure is visible and reload remains available",
+      "mobile layout has no horizontal page overflow"
+    ],
+    "javascript_errors": [],
+    "external_page_requests": [],
+    "data": "synthetic only",
+    "browser": "new isolated Chrome profile on Windows; no Mac test"
+  },
+  "visual_review": "Overview, editor, week with explicit offset and mobile screenshots inspected; no horizontal mobile overflow.",
+  "installer": "Dashboard copied into new instance; generated bin/social-publisher dashboard --help executed; no source package needed after install.",
+  "existing_engine_files_unchanged": true,
+  "worker_baseline_cases": 59,
+  "historical_python_baseline": {
+    "previous_passed": 8,
+    "previous_total": 9,
+    "rerun": false,
+    "known_failure": "Synthetic 1px PNG fixture fails FFmpeg inflate decoding; original code/fixture untouched. Actual PNG conversion passed in baseline."
+  },
+  "external_contracts": "Remote account/status/cancel tested with strict controlled transport; exact receipt/project/account/platform enforced. No live provider verification.",
+  "not_executed": [
+    "macOS installation or browser",
+    "real OAuth/account connection",
+    "real remote read or cancellation",
+    "publication",
+    "advertising",
+    "deployment",
+    "Cron"
+  ],
+  "persistence": "Synthetic temporary instances only; real projects and production untouched; no persistent service created.",
+  "publication": "Specific authorization for public dashboard code received; publish only after final scan and remote-head comparison; no force push."
+}

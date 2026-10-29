@@ -1,5 +1,7 @@
 # Retour arrière
 
+Dashboard : arrêter le seul processus local démarré pour cette instance avec Ctrl+C. Il n’existe aucun LaunchAgent ni service à désinstaller. Les modifications de file sont des données de travail : les sauvegarder avant tout retrait d’instance. Les imports locaux peuvent rester dans `dashboard-media/` même après fermeture d’un éditeur ; ne pas supprimer automatiquement les médias. Les changements d’un paquet privé ou d’une version Git ne restaurent pas les files personnelles éditées.
+
 ```sh
 python3 social_publisher_setup.py rollback-plan --prefix '<CHEMIN_INSTANCE>'
 ```

@@ -22,7 +22,7 @@ INSTANCE_CONFIG = 'wrangler.instance.jsonc'
 ORIGINAL_WORKER = 'stellark-social-publisher'
 NAME_PATTERN = re.compile(r'^[a-z][a-z0-9-]{2,62}$')
 DOC_DIRECTORIES = ('prompts', 'inventory', 'validation')
-DOC_FILES = ('document.md', 'README.md', 'ARCHITECTURE.md', 'INSTALLATION.md', 'CLOUDFLARE.md', 'ROLLBACK.md', 'DOMAINE-GRATUIT.md')
+DOC_FILES = ('document.md', 'README.md', 'ARCHITECTURE.md', 'INSTALLATION.md', 'CLOUDFLARE.md', 'ROLLBACK.md', 'DOMAINE-GRATUIT.md', 'DASHBOARD.md')
 SECRET_NAMES = ('ADMIN_API_TOKEN', 'TOKEN_ENCRYPTION_KEY', 'META_APP_SECRET', 'INSTAGRAM_APP_SECRET',
                 'LINKEDIN_CLIENT_SECRET', 'TIKTOK_CLIENT_KEY', 'TIKTOK_CLIENT_SECRET',
                 'TIKTOK_BUSINESS_CLIENT_ID', 'TIKTOK_BUSINESS_CLIENT_SECRET')
@@ -37,7 +37,12 @@ environment['HOME'] = str(root / 'home')
 environment['USERPROFILE'] = str(root / 'home')
 environment['SOCIAL_PUBLISHER_REGISTRY'] = str(root / 'home/.codex/social-publisher/registry.json')
 environment['PYTHONDONTWRITEBYTECODE'] = '1'
-raise SystemExit(subprocess.call([sys.executable, str(root / 'service/scripts/social_cli.py'), *sys.argv[1:]], env=environment))
+arguments = sys.argv[1:]
+if arguments and arguments[0] == 'dashboard':
+    command = [sys.executable, str(root / 'dashboard/server.py'), '--prefix', str(root), *arguments[1:]]
+else:
+    command = [sys.executable, str(root / 'service/scripts/social_cli.py'), *arguments]
+raise SystemExit(subprocess.call(command, env=environment))
 '''
 SHELL_LAUNCHER = '''#!/bin/sh
 set -eu
@@ -106,6 +111,7 @@ def install(args):
         shutil.copytree(PACKAGE_ROOT / 'cloud/social-publisher', prefix / 'service')
         shutil.copytree(PACKAGE_ROOT / 'mac/skill/social-publisher', prefix / 'home/.codex/skills/social-publisher')
         shutil.copytree(PACKAGE_ROOT / 'examples/demo', prefix / 'projects/demo')
+        shutil.copytree(PACKAGE_ROOT / 'dashboard', prefix / 'dashboard')
         for directory in DOC_DIRECTORIES:
             shutil.copytree(PACKAGE_ROOT / directory, prefix / 'docs' / directory)
         for filename in DOC_FILES:
@@ -188,6 +194,19 @@ def cloud_config(args):
                       'crons': [], 'cloud_mutation': False, 'next': 'cloud-plan'}, indent=2))
 
 
+def dashboard(args):
+    prefix = args.prefix.expanduser().resolve()
+    receipt(prefix)
+    command = [sys.executable, str(prefix / 'dashboard/server.py'), '--prefix', str(prefix), '--port', str(args.port)]
+    if args.allow_remote_read:
+        command.append('--allow-remote-read')
+    if args.allow_remote_cancel:
+        if not args.allow_remote_read:
+            raise ValueError('Remote cancellation requires explicitly enabling remote read as well')
+        command.append('--allow-remote-cancel')
+    run(command, prefix)
+
+
 def cloud_plan(args):
     prefix = args.prefix.expanduser().resolve()
     receipt(prefix)
@@ -243,11 +262,15 @@ def rollback_plan(args):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest='command', required=True)
-    for name in ('install', 'doctor', 'cloud-config', 'cloud-plan', 'deploy', 'rollback-plan'):
+    for name in ('install', 'doctor', 'dashboard', 'cloud-config', 'cloud-plan', 'deploy', 'rollback-plan'):
         command = commands.add_parser(name)
         command.add_argument('--prefix', type=Path, required=True)
         if name == 'install':
             command.add_argument('--skip-deps', action='store_true')
+        if name == 'dashboard':
+            command.add_argument('--port', type=int, default=8788)
+            command.add_argument('--allow-remote-read', action='store_true')
+            command.add_argument('--allow-remote-cancel', action='store_true')
         if name == 'cloud-config':
             for argument in ('worker-name', 'database-name', 'database-id', 'bucket-name'):
                 command.add_argument('--' + argument, required=True)
@@ -258,7 +281,7 @@ def main():
             command.add_argument('--confirm-worker-name', required=True)
     args = parser.parse_args()
     actions = {'install': install, 'doctor': doctor, 'cloud-config': cloud_config,
-               'cloud-plan': cloud_plan, 'deploy': deploy, 'rollback-plan': rollback_plan}
+               'cloud-plan': cloud_plan, 'deploy': deploy, 'rollback-plan': rollback_plan, 'dashboard': dashboard}
     try:
         actions[args.command](args)
     except (OSError, ValueError, subprocess.CalledProcessError) as error:

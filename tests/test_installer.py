@@ -3,6 +3,8 @@ import contextlib
 import importlib.util
 import io
 import json
+import subprocess
+import sys
 from pathlib import Path
 import tempfile
 import unittest
@@ -41,9 +43,14 @@ class InstallerTest(unittest.TestCase):
         self.assertEqual(SETUP.receipt(self.prefix)['status'], 'installed')
         self.assertEqual(SETUP.receipt(self.prefix)['dependencies'], 'not_installed')
         for path in ('service/src/index.ts', 'home/.codex/skills/social-publisher/scripts/social_queue.py',
+                     'dashboard/server.py', 'dashboard/static/index.html', 'dashboard/static/app.js', 'dashboard/static/styles.css',
                      'bin/social-publisher.py', 'docs/ARCHITECTURE.md', 'docs/INSTALLATION.md',
                      'docs/CLOUDFLARE.md', 'docs/ROLLBACK.md', 'docs/document.md'):
             self.assertTrue((self.prefix / path).is_file(), path)
+        help_result = subprocess.run([sys.executable, str(self.prefix / 'bin/social-publisher.py'), 'dashboard', '--help'],
+            capture_output=True, text=True, check=True)
+        self.assertIn('--port', help_result.stdout)
+        self.assertIn('--allow-remote-read', help_result.stdout)
 
     def test_existing_destination_is_untouched(self):
         self.prefix.mkdir()
